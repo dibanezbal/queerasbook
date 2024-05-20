@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475 242">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        font-size: 72px;
+        letter-spacing: .04em;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-family: Lato-Bold, Lato;
+        font-weight: 700;
+      }
+
+      .cls-5, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #ff7bac;
+      }
+
+      .cls-3 {
+        font-size: 108px;
+        letter-spacing: .03em;
+      }
+
+      .cls-4 {
+        font-size: 79px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <rect class="cls-1" width="475" height="242"/>
+      <path class="cls-5" d="m70,53.37c14.89,0,27,12.11,27,27s-12.11,27-27,27-27-12.11-27-27,12.11-27,27-27m0-13c-22.09,0-40,17.91-40,40s17.91,40,40,40,40-17.91,40-40-17.91-40-40-40h0Z"/>
+      <polygon class="cls-6" points="125.5 115.54 70 145.29 70.14 80.31 98.31 97.41 125.5 115.54"/>
+      <text class="cls-3" transform="translate(120 119.65) scale(1.05 1)"><tspan x="0" y="0">UEER</tspan></text>
+      <text class="cls-4" transform="translate(33.47 201.29)"><tspan x="0" y="0">as</tspan></text>
+      <rect class="cls-5" x="127" y="134" width="290" height="85"/>
+      <text class="cls-2" transform="translate(154.22 201.02) scale(1.05 1)"><tspan x="0" y="0">BOOK</tspan></text>
+    </g>
+  </g>
+</svg>
