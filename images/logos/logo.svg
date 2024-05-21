@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 391.95 212.62">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 108px;
+        letter-spacing: .03em;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-family: Lato-Bold, Lato;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 72px;
+        letter-spacing: .04em;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #ff7bac;
+      }
+
+      .cls-3 {
+        font-size: 79px;
+      }
+    </style>
+    <symbol id="Q_-_QUEER" data-name="Q - QUEER" viewBox="0 0 95.5 104.92">
+      <g>
+        <g>
+          <circle class="cls-4" cx="40" cy="40" r="33.5"/>
+          <path d="m40,13c14.89,0,27,12.11,27,27s-12.11,27-27,27-27-12.11-27-27,12.11-27,27-27m0-13C17.91,0,0,17.91,0,40s17.91,40,40,40,40-17.91,40-40S62.09,0,40,0h0Z"/>
+        </g>
+        <polygon class="cls-5" points="95.5 75.17 40 104.92 40.14 39.94 68.31 57.05 95.5 75.17"/>
+      </g>
+    </symbol>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <text class="cls-1" transform="translate(89.95 93.04) scale(1.05 1)"><tspan x="0" y="0">UEER</tspan></text>
+      <text class="cls-3" transform="translate(2.42 174.68)"><tspan x="0" y="0">as</tspan></text>
+      <rect class="cls-5" x="97.7" y="107.32" width="289" height="85"/>
+      <text class="cls-2" transform="translate(124.43 174.34) scale(1.05 1)"><tspan x="0" y="0">BOOK</tspan></text>
+      <use width="95.5" height="104.92" transform="translate(0 14.57)" xlink:href="#Q_-_QUEER"/>
+    </g>
+  </g>
+</svg>
