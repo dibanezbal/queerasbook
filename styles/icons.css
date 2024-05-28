@@ -1,0 +1,59 @@
+/* Iconos */
+
+.qb-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-social .qb-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.qb-icon-float-left {
+    float: left;
+    clear: left;
+}
+
+.qb-icon--hamburger {
+    background: no-repeat center/80% url(../images/icons/menu-icon.svg);
+}
+
+.qb-icon--close {
+    background: no-repeat center/80%  url(../images/icons/close-icon.svg);
+}
+
+.qb-icon--profile {
+    background: no-repeat center/80%  url(../images/icons/profile-icon.svg);
+}
+
+.qb-icon--cart {
+    background: no-repeat center/80%  url(../images/icons/cart-icon.svg);
+}
+
+.qb-icon--search {
+    background: no-repeat center/80%  url(../images/icons/search-icon.svg);
+}
+
+.qb-icon--search-w {
+    background: no-repeat center/80%  url(../images/icons/search-icon-w.svg);
+}
+
+.qb-icon--facebook {
+    background: no-repeat center  url(../images/icons/facebook-icon.svg);
+}
+
+.qb-icon--twitter {
+    background: no-repeat center url(../images/icons/twitter-icon.svg);
+}
+
+.qb-icon--instagram {
+    background: no-repeat center  url(../images/icons/instagram-icon.svg);
+}
+
+.qb-icon--whatsapp {
+    background: no-repeat center url(../images/icons/whatsapp-icon.svg);
+}

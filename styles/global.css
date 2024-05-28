@@ -1,0 +1,52 @@
+/* Importar estilos */
+@import url(./icons.css);
+
+/* -- Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+}
+
+/* Colores */
+:root {
+	--qb-c-black: #0D0C0C;
+	--qb-c-pink-primary: #FF7BAC;
+	--qb-c-pink-secondary: #F04C88;
+	--qb-c-pink-tertiary: #D42B69;
+	--qb-c-white: #FFF;
+	
+	--qb-c-gray-primary: #F3F2F2; 
+	--qb-c-gray-secondary: #DCDBDB;
+	--qb-c-gray-tertiary: #ACAAAA;
+
+	--qb-c-alert: #80FFD0;
+	--qb-c-notifications: #FFAE4D;
+	--qb-c-error: #DE4533;
+}
+
+
+/* Fuentes */
+
+@font-face {
+	font-family: 'Lato';
+	src: url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+}
+
+/* Botones */
+
+.btn {
+	font-weight: 900;
+	font-size: medium;
+}
+
+.btn--tertiary {
+	border: 1px solid var(--qb-c-pink-primary);
+	color: var(--qb-c-pink-primary);
+	padding: 10px 25px;
+	border-radius: 50px;
+	background-color: var(--qb-c-black);
+}
