@@ -42,7 +42,9 @@
 
     <main>
       <div id="carousel">
+        <label for="slide1" aria-hidden="false"></label>
         <input checked type="radio" name="slider" id="slide1" >
+        <label for="slide2" aria-hidden="true"></label>
         <input type="radio" name="slider" id="slide2" >
 
         <div id="slides">
@@ -73,7 +75,9 @@
 
         <div class="carousel-active carousel-slider-buttons">
           <label class="slider-left" for="slide1">&lt;</label>
+          <input checked type="radio" name="slider" id="slide1" >
           <label class="slider-right" for="slide2">></label>
+          <input checked type="radio" name="slider" id="slide1" >
         </div>
       </div>
       <!-- #carousel -->
@@ -168,13 +172,10 @@
       </div>
       <div class="footer-second-block">
         <form action="#" method="post" accept-charset="utf-8" id="newsletter-subscribe">
-          <h4>Suscríbete a la Newsletter</h4>
+          <h3>Suscríbete a la Newsletter</h3>
           <p>
-            Entérate de todas las noticias de <br >
-            nuestra comunidad.
-          </p>
-
-          <p>
+            <label for="subscribe-field">Entérate de todas las noticias de <br >
+              nuestra comunidad.</label><br>
             <input type="text" name="email" placeholder="Escribe aquí tu email" value="" id="subscribe-field" >
           </p>
           <p>
@@ -183,7 +184,7 @@
         </form>
       </div>
       <div class="footer-third-block">
-        <h4>Síguenos en nuestras redes</h4>
+        <h3>Síguenos en nuestras redes</h3>
         <ul class="footer-links footer-social">
           <li>
             <a href="#"><i class="qb-icon qb-icon--facebook"></i></a>
