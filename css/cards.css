@@ -1,5 +1,5 @@
 /**
- * CARDS BOOKS - NOVEDADES Y LOS MÁS VENDIDOS
+ * CARDS BOOKS
  *
  * @format
  */
@@ -12,6 +12,32 @@ section.cards-books-wrapper {
 
 article.card-books {
   width: 130px;
+  position: relative;
+}
+
+article.card-books:before {
+  content: "";
+  background-color: var(--qb-c-gray-primary);
+  background-image: url('../images/icons/heart-icon.svg');
+  background-repeat: no-repeat;  
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border-radius: 50px;
+  border: 1px solid var(--qb-c-black);
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+article.card-books:hover:before {
+  opacity: 1;
+  transform: scale(1);
+  cursor: pointer;
 }
 
 article.card-books img {
@@ -31,6 +57,10 @@ article.card-books h4.precio {
 
 article.card-books button {
   margin-top: 15px;
+}
+
+.card-books.card-suggestions {
+  text-align: center;
 }
 
 /* CARDS DEALS - OFERTAS Y PROMOCIONES */
@@ -61,7 +91,7 @@ article.card-books button {
 }
 
 .text-over-image.text-deal {
-  text-align: center; /* Center the text within the div */
+  text-align: center;
 }
 
 span.max-deal {
@@ -72,7 +102,41 @@ span.max-deal {
   width: 100%;
 }
 
-/* CARDS EVENTS - EVENTOS */
+/* CARDS EVENTS HOME - EVENTOS */
+.cards-events-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards-events-wrapper article {
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--qb-c-pink-primary);
+  background: var(--qb-c-gray-primary);
+}
+
+.cards-events-wrapper article img {
+  width: 50%;
+}
+
+.cards-events-wrapper article .text-events {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards-events-wrapper article .text-events h3 {
+  color: var(--qb-c-pink-secondary);
+}
+
+.cards-events-wrapper .btn--link {
+  margin: 0 auto;
+}
 
 @media (min-width: 575px) {
   /* CARDS BOOKS - NOVEDADES Y LOS MÁS VENDIDOS */
@@ -89,9 +153,20 @@ span.max-deal {
     font-size: large;
   }
 
-  article.card-books h4.precio {
+  article.card-books h4.precio,
+  article.card-books h4.rating {
     font-size: x-large;
-    font-weight: 700;
+    font-weight: 800;
+  }
+
+  article.card-books h4.rating:before {
+    content: "";
+    background: url("../images/icons/star-icon.svg");
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    background-repeat: no-repeat;
   }
 
   /* CARDS DEALS - OFERTAS Y PROMOCIONES */
@@ -138,51 +213,21 @@ span.max-deal {
   .cards-deals-wrapper article p {
     font-size: medium;
   }
-}
 
-
-@media (min-width: 320px) and (max-width: 575px) {
-
-  section.cards-books-wrapper {
-    justify-content: space-evenly;
+  /* CARDS EVENTS */
+  .cards-events-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  article.card-books {
-    width: 130px;
+  .cards-events-wrapper article {
+    width: 50vw;
+  }
+  .cards-events-wrapper article:first-child {
+    margin-right: 20px;
   }
 
-  .cards-deals-wrapper article p {
-    font-size: large;
-  }
-  .text-over-image {
-    top: 20%;
-  }
-}
-
-@media (min-width: 575px) and (max-width: 767px) {
-  .cards-deals-wrapper article p {
-    font-size: large;
-  }
-  .text-over-image {
-    top: 25%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1279px) {
-  .cards-deals-wrapper article p {
-    font-size: x-large;
-  }
-  .text-over-image {
-    top: 15%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .cards-deals-wrapper article p {
-    font-size: xx-large;
-  }
-
-  .text-over-image {
-    top: 25%;
+  .cards-events-wrapper article:nth-child(2) {
+    margin-left: 20px;
   }
 }

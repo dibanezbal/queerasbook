@@ -42,6 +42,14 @@
     background: no-repeat center/80%  url(../images/icons/search-icon-w.svg);
 }
 
+.qb-icon--star {
+    background: no-repeat center/80%  url(../images/icons/star-icon.svg);
+}
+
+.qb-icon--star {
+    background: no-repeat center/80%  url(../images/icons/heart-icon.svg);
+}
+
 .qb-icon--facebook {
     background: no-repeat center  url(../images/icons/facebook-icon.svg);
 }

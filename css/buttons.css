@@ -5,12 +5,19 @@
 	line-height: 16px;
     padding: 10px 25px;
     border-radius: 50px;
+	cursor: pointer;
 }
 
 .btn--primary {
     border: 2px solid var(--qb-c-black);
     background-color: var(--qb-c-pink-primary);
 	width: 100%;
+}
+
+.btn--primary:hover {
+	border: 2px solid var(--qb-c-pink-secondary);
+	background-color: var(--qb-c-gray-primary);
+	color: var(--qb-c-pink-secondary);
 }
 
 .btn--secondary {
@@ -31,4 +38,8 @@
 	margin: 40px auto;
 	color: var(--qb-c-black);
 	text-decoration: underline;
+}
+
+.btn--link:hover {
+	color: var(--qb-c-pink-secondary);
 }
