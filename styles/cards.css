@@ -18,7 +18,7 @@ article.card-books p {
   margin: 10px 0;
 }
 
-article.card-books p.precio {
+article.card-books h4.precio {
   font-size: medium;
   font-weight: 700;
 }
@@ -47,7 +47,7 @@ article.card-books button {
     font-size: large;
   }
 
-  article.card-books p.precio {
+  article.card-books h4.precio {
     font-size: x-large;
     font-weight: 700;
   }
