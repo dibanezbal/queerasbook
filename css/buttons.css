@@ -8,16 +8,20 @@
 }
 
 .btn--primary {
-    border: 1px solid var(--qb-c-black);
+    border: 2px solid var(--qb-c-black);
     background-color: var(--qb-c-pink-primary);
 	width: 100%;
+}
+
+.btn--secondary {
+	border: 1px solid var(--qb-c-pink-primary);
+    background-color: var(--qb-c-gray-primary);
+	color: var(--qb-c-pink-primary);
 }
 
 .btn--tertiary {
 	border: 1px solid var(--qb-c-pink-primary);
 	color: var(--qb-c-pink-primary);
-
-
 	background-color: var(--qb-c-black);
 }
 
