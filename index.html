@@ -3,17 +3,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="description" content="La nueva librería online para una comunidad orgullosa." >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="La nueva librería online para una comunidad orgullosa." />
     <title>Inicio - Queer as Book</title>
-    <link rel="stylesheet" href="./styles/styles.css" >
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
     <header>
       <div class="header-wrapper">
-        <a class="logo-desktop" href="index.html"><img src="./images/logos/logo-white-pink.svg" alt="Logo Queer as Book" width="80" ></a>
+        <a class="logo-desktop" href="index.html"><img src="./images/logos/logo-white-pink.svg" alt="Logo Queer as Book" width="80" /></a>
 
         <!-- -->
         <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Abrir menu"><i class="qb-icon qb-icon--hamburger" aria-hidden="true"></i></a>
@@ -30,10 +30,10 @@
             <li><a href="quienes-somos.html">Quiénes somos</a></li>
           </ul>
 
-          <a class="logo-mobile" href="index.html"><img src="./images/logos/logo-black-sm.svg" alt="Logo Queer as Book" width="40" ></a>
+          <a class="logo-mobile" href="index.html"><img src="./images/logos/logo-black-sm.svg" alt="Logo Queer as Book" width="40" /></a>
         </nav>
 
-        <a class="logo-mobile" href="index.html"><img src="./images/logos/logo-white-pink-sm.svg" alt="Logo Queer as Book" width="40" ></a>
+        <a class="logo-mobile" href="index.html"><img src="./images/logos/logo-white-pink-sm.svg" alt="Logo Queer as Book" width="40" /></a>
         <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
         <a class="item-icon" href="#"><i class="qb-icon qb-icon--profile"></i> Perfil</a>
         <a class="item-icon" href="#"><i class="qb-icon qb-icon--cart"></i>Carrito</a>
@@ -42,10 +42,12 @@
 
     <main>
       <div id="carousel">
-        <label for="slide1" aria-hidden="false"></label>
-        <input checked type="radio" name="slider" id="slide1" >
-        <label for="slide2" aria-hidden="true"></label>
-        <input type="radio" name="slider" id="slide2" >
+        <fieldset>
+          <label for="slide1" aria-labelledby="slide1"></label>
+          <input checked type="radio" name="slider" id="slide1" />
+          <label for="slide2" aria-labelledby="slide2"></label>
+          <input type="radio" name="slider" id="slide2" />
+        </fieldset>
 
         <div id="slides">
           <div id="overflow">
@@ -53,12 +55,12 @@
               <article>
                 <div class="info"><h1>Tu nueva librería de confianza</h1></div>
 
-                <img alt="Imagen de portada. Pareja en el sofá" src="https://plus.unsplash.com/premium_photo-1661420106087-e284409f4782?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" >
+                <img alt="Imagen de portada. Pareja en el sofá" src="https://plus.unsplash.com/premium_photo-1661420106087-e284409f4782?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
               </article>
 
               <article>
                 <div class="info"><h1>Taller de escritura creativa</h1></div>
-                <img alt="Imagen de evento. Taller de escritura creativa" src="https://plus.unsplash.com/premium_photo-1706061118695-5c6cc28e418d?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" >
+                <img alt="Imagen de evento. Taller de escritura creativa" src="https://plus.unsplash.com/premium_photo-1706061118695-5c6cc28e418d?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==" />
               </article>
             </div>
             <!-- .inner -->
@@ -68,16 +70,16 @@
         <!-- #slides -->
 
         <div class="carousel-active">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
+          <label for="slide1" aria-labelledby="slide1"></label>
+          <label for="slide2" aria-labelledby="slide2"></label>
         </div>
         <!-- #active -->
 
         <div class="carousel-active carousel-slider-buttons">
-          <label class="slider-left" for="slide1">&lt;</label>
-          <input checked type="radio" name="slider" id="slide1" >
-          <label class="slider-right" for="slide2">></label>
-          <input checked type="radio" name="slider" id="slide1" >
+          <label class="slider-left" for="slide1" aria-labelledby="slide1">&lt;</label>
+          <input checked type="radio" name="slider" id="slide1" />
+          <label class="slider-right" for="slide2" aria-labelledby="slide2">></label>
+          <input checked type="radio" name="slider" id="slide1" />
         </div>
       </div>
       <!-- #carousel -->
@@ -86,7 +88,7 @@
         <h2>Novedades</h2>
         <section class="cards-books-distribution">
           <article class="card-books">
-            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" >
+            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" />
             <h3>The transgender Issue</h3>
             <p>Shon Faye</p>
             <h4 class="precio">12,34€</h4>
@@ -94,7 +96,7 @@
           </article>
 
           <article class="card-books">
-            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" >
+            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" />
             <h3>The transgender Issue</h3>
             <p>Shon Faye</p>
             <h4 class="precio">12,34€</h4>
@@ -102,7 +104,7 @@
           </article>
 
           <article class="card-books">
-            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" >
+            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" />
             <h3>The transgender Issue</h3>
             <p>Shon Faye</p>
             <h4 class="precio">12,34€</h4>
@@ -110,7 +112,7 @@
           </article>
 
           <article class="card-books">
-            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" >
+            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" />
             <h3>The transgender Issue</h3>
             <p>Shon Faye</p>
             <h4 class="precio">12,34€</h4>
@@ -120,49 +122,49 @@
         <a class="btn--link" href="#">Ver más</a>
       </section>
       <!-- End of Section cards of books -->
-            <!-- Section cards of books -->
-            <section class="container">
-              <h2>Los más vendidos</h2>
-              <section class="cards-books-distribution">
-                <article class="card-books">
-                  <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" >
-                  <h3>The transgender Issue</h3>
-                  <p>Shon Faye</p>
-                  <h4 class="precio">12,34€</h4>
-                  <button class="btn btn--primary">Comprar</button>
-                </article>
-      
-                <article class="card-books">
-                  <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" >
-                  <h3>The transgender Issue</h3>
-                  <p>Shon Faye</p>
-                  <h4 class="precio">12,34€</h4>
-                  <button class="btn btn--primary">Comprar</button>
-                </article>
-      
-                <article class="card-books">
-                  <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" >
-                  <h3>The transgender Issue</h3>
-                  <p>Shon Faye</p>
-                  <h4 class="precio">12,34€</h4>
-                  <button class="btn btn--primary">Comprar</button>
-                </article>
-      
-                <article class="card-books">
-                  <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" >
-                  <h3>The transgender Issue</h3>
-                  <p>Shon Faye</p>
-                  <h4 class="precio">12,34€</h4>
-                  <button class="btn btn--primary">Comprar</button>
-                </article>
-              </section>
-              <a class="btn--link" href="#">Ver más</a>
-            </section>
-            <!-- End of Section cards of books -->
+      <!-- Section cards of books -->
+      <section class="container">
+        <h2>Los más vendidos</h2>
+        <section class="cards-books-distribution">
+          <article class="card-books">
+            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" />
+            <h3>The transgender Issue</h3>
+            <p>Shon Faye</p>
+            <h4 class="precio">12,34€</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" />
+            <h3>The transgender Issue</h3>
+            <p>Shon Faye</p>
+            <h4 class="precio">12,34€</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" />
+            <h3>The transgender Issue</h3>
+            <p>Shon Faye</p>
+            <h4 class="precio">12,34€</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="https://www.queerlit.co.uk/cdn/shop/products/9780241423141_b2c5d167-e8be-4f23-af86-11f221626fd6_370x.jpg?v=1641292805" alt="portada libro X" />
+            <h3>The transgender Issue</h3>
+            <p>Shon Faye</p>
+            <h4 class="precio">12,34€</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+        </section>
+        <a class="btn--link" href="#">Ver más</a>
+      </section>
+      <!-- End of Section cards of books -->
     </main>
     <footer>
       <div class="footer-first-block">
-        <a class="logo-footer" href="index.html"><img src="./images/logos/logo-white.svg" alt="Logo Queer as Book" width="130" ></a>
+        <a class="logo-footer" href="index.html"><img src="./images/logos/logo-white.svg" alt="Logo Queer as Book" width="130" /></a>
         <ul class="footer-links">
           <li><a href="tienda.html">Tienda</a></li>
           <li><a href="eventos.html">Eventos</a></li>
@@ -172,31 +174,33 @@
       </div>
       <div class="footer-second-block">
         <form action="#" method="post" accept-charset="utf-8" id="newsletter-subscribe">
-          <h3>Suscríbete a la Newsletter</h3>
+          <h4>Suscríbete a la Newsletter</h4>
           <p>
-            <label for="subscribe-field">Entérate de todas las noticias de <br >
-              nuestra comunidad.</label><br>
-            <input type="text" name="email" placeholder="Escribe aquí tu email" value="" id="subscribe-field" >
+            <label for="subscribe-field"
+              >Entérate de todas las noticias de <br />
+              nuestra comunidad.</label
+            ><br />
+            <input type="text" name="email" placeholder="Escribe aquí tu email" value="" id="subscribe-field" />
           </p>
           <p>
-            <input class="btn btn--tertiary" type="submit" value="Enviar" >
+            <input class="btn btn--tertiary" type="submit" value="Enviar" />
           </p>
         </form>
       </div>
       <div class="footer-third-block">
-        <h3>Síguenos en nuestras redes</h3>
+        <h4>Síguenos en nuestras redes</h4>
         <ul class="footer-links footer-social">
           <li>
-            <a href="#"><i class="qb-icon qb-icon--facebook"></i></a>
+            <a href="#" aria-label="boton para ir a facebook"><i class="qb-icon qb-icon--facebook"></i></a>
           </li>
           <li>
-            <a href="#"><i class="qb-icon qb-icon--twitter"></i></a>
+            <a href="#" aria-label="boton para ir a twitter"><i class="qb-icon qb-icon--twitter"></i></a>
           </li>
           <li>
-            <a href="#"><i class="qb-icon qb-icon--instagram"></i></a>
+            <a href="#" aria-label="boton para ir a instagram"><i class="qb-icon qb-icon--instagram"></i></a>
           </li>
           <li>
-            <a href="#"><i class="qb-icon qb-icon--whatsapp"></i></a>
+            <a href="#" aria-label="boton para ir a whatsapp"><i class="qb-icon qb-icon--whatsapp"></i></a>
           </li>
         </ul>
       </div>
