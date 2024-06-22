@@ -1,4 +1,8 @@
-/* CARDS BOOKS */
+/**
+ * CARDS BOOKS
+ *
+ * @format
+ */
 
 section.cards-books-wrapper {
   display: flex;
@@ -14,8 +18,8 @@ article.card-books {
 article.card-books:before {
   content: "";
   background-color: var(--qb-c-gray-primary);
-  background-image: url('../images/icons/heart-icon.svg');
-  background-repeat: no-repeat;  
+  background-image: url("../images/icons/heart-icon.svg");
+  background-repeat: no-repeat;
   background-position: center;
   width: 30px;
   height: 30px;
@@ -59,6 +63,17 @@ article.card-books button {
   text-align: center;
 }
 
+article.card-books h4.rating:before {
+  content: "";
+  background: url("../images/icons/star-icon.svg");
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+
 /* CARDS DEALS - OFERTAS Y PROMOCIONES */
 
 .cards-deals-wrapper {
@@ -75,7 +90,7 @@ article.card-books button {
   position: absolute;
   top: 5%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0);
   z-index: 1;
 }
 
@@ -125,6 +140,7 @@ span.max-deal {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  font-size: x-small;
 }
 
 .cards-events-wrapper article .text-events h3 {
@@ -156,23 +172,15 @@ span.max-deal {
     font-weight: 800;
   }
 
-  article.card-books h4.rating:before {
-    content: "";
-    background: url("../images/icons/star-icon.svg");
-    width: 25px;
-    height: 20px;
-    display: inline-block;
-    margin-right: 10px;
-    background-repeat: no-repeat;
-  }
-
   /* CARDS DEALS - OFERTAS Y PROMOCIONES */
   .cards-deals-wrapper article p {
     font-size: large;
-    transform: translateY(50%);
   }
 
-  /* CARDS EVENTS - EVENTOS */
+  .cards-events-wrapper article .text-events {
+    font-size: small;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -202,7 +210,10 @@ span.max-deal {
 
   .cards-deals-wrapper article p {
     font-size: x-large;
+  }
 
+  .text-over-image {
+    transform: translate(-50%, 50%);
   }
 
   /* CARDS EVENTS */
@@ -223,24 +234,32 @@ span.max-deal {
   }
 }
 
-@media (min-width: 768px) {
-    /* CARDS DEALS - OFERTAS Y PROMOCIONES */
 
-    .cards-deals-wrapper {
-      flex-direction: row;
-    }
+@media (min-width: 1024px){
 
-    .cards-deals-wrapper article:first-child {
-      margin-right: 20px;
-    }
-
-    .cards-deals-wrapper article:nth-child(2) {
-      margin-left: 20px;
-    }
+  /* CARDS DEALS - OFERTAS Y PROMOCIONES */
   
-    .cards-deals-wrapper article p {
-      font-size: large;
-      transform: translateY(25%);
-    }
+  .cards-deals-wrapper {
+    flex-direction: row;
+  }
   
+  .cards-deals-wrapper article:first-child {
+    margin-right: 20px;
+  }
+  
+  .cards-deals-wrapper article:nth-child(2) {
+    margin-left: 20px;
+  }
+  
+  .cards-deals-wrapper article p {
+    font-size: x-large;
+  }
+
+  .text-over-image {
+    transform: translate(-50%, 50%);
+  }
+    /* CARDS EVENTS */
+  .cards-events-wrapper article .text-events {
+    font-size: medium;
+  }
 }

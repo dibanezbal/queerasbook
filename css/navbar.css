@@ -43,7 +43,6 @@ header a {
 	left: 0;
   background: var(--qb-c-white);
   width: 100vw;
-  border-bottom: 1px solid var(--qb-c-pink-primary);
 }
 
 #navbar-mobile-menu li,
@@ -55,8 +54,12 @@ header a {
   border-left: 1px solid var(--qb-c-pink-primary);
   border-right: 1px solid var(--qb-c-pink-primary);
   border-top: 1px solid var(--qb-c-pink-primary);
+  border-bottom: 1px solid var(--qb-c-pink-primary);
   padding: 24px;
 }
+
+#navbar-mobile-menu li:last-child {
+} 
 
 #nav-right-icons {
 	width: 80px;
@@ -131,7 +134,7 @@ a .item-icon {
 .main-menu a:hover,
 .main-menu a:focus {
   background: #333;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .main-menu .menu-close {
@@ -140,14 +143,6 @@ a .item-icon {
   top: 0;
 }
 
-
-/*
- On small devices, allow it to toggle...
-*/
-/*
- :target for non-JavaScript
- [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-*/
 .main-menu:target,
 .main-menu[aria-expanded="true"] {
   display: block;
@@ -196,9 +191,6 @@ a .item-icon {
 }
 
 
-
-
-
 @media screen and (min-width: 575px) {
   .logo-desktop {
     display: inline;
@@ -213,23 +205,27 @@ a .item-icon {
   #navbar-mobile-menu li {
     border: none;
     padding: 0;
+    margin: 0 26px 0 0;
   }
 
   #navbar-mobile-menu {
     position: relative;
     background: var(--qb-c-black);
     color: var(--qb-c-white);
-    width: 100vw;
     border-bottom: none;
+    width: inherit;
   }
 
   #navbar-mobile-menu li,
   #navbar-mobile-menu a {
     color: var(--qb-c-white);
+    padding-bottom: 2px;
   }
+
+  #navbar-mobile-menu a:hover {
+    border-bottom: 2px solid var(--qb-c-pink-primary) !important; 
+   }
 }
-
-
 
 
 /*
@@ -238,7 +234,7 @@ a .item-icon {
 */
 @media (min-width: 768px) {
   .header-wrapper {
-    width: 70vw;
+    width: 73vw;
     margin: 0 auto;
   }
   .main-menu .menu-close {
@@ -249,7 +245,6 @@ a .item-icon {
     display: none;
   }
   
-  /* Undo positioning of off-canvas menu */
   .main-menu {
     position: relative;
 		left: auto;
@@ -260,8 +255,7 @@ a .item-icon {
   
   .main-menu ul {
     display: flex;
-    
-    /* Undo off-canvas styling */
+    justify-content: space-between;
     padding: 0;
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
@@ -273,12 +267,12 @@ a .item-icon {
   
   .main-menu a {
     color: white;
-    border: 0 !important; /* Remove borders from off-canvas styling */
+    border: 0 !important;
   }
   
   .main-menu a:hover,
   .main-menu a:focus {
-    background: none; /* Remove background from off-canvas styling */
+    background: none;
     color: #c00;
   }
 }

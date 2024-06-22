@@ -1,6 +1,6 @@
 
 .btn {
-	font-weight: 900;
+	font-weight: 700;
 	font-size: medium;
 	line-height: 16px;
     padding: 10px 25px;
@@ -42,4 +42,8 @@
 
 .btn--link:hover {
 	color: var(--qb-c-pink-secondary);
+}
+
+.btn--search {
+	
 }
