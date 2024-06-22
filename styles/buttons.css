@@ -1,0 +1,30 @@
+
+.btn {
+	font-weight: 900;
+	font-size: medium;
+	line-height: 16px;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+.btn--primary {
+    border: 1px solid var(--qb-c-black);
+    background-color: var(--qb-c-pink-primary);
+	width: 100%;
+}
+
+.btn--tertiary {
+	border: 1px solid var(--qb-c-pink-primary);
+	color: var(--qb-c-pink-primary);
+
+
+	background-color: var(--qb-c-black);
+}
+
+.btn--link {
+	display: block;
+	text-align: center;
+	margin: 40px auto;
+	color: var(--qb-c-black);
+	text-decoration: underline;
+}

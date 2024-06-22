@@ -1,0 +1,54 @@
+section.cards-books-distribution {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+article.card-books {
+  width: 130px;
+}
+
+article.card-books img {
+  width: 100%;
+}
+
+article.card-books h3,
+article.card-books p {
+  font-size: small;
+  margin: 10px 0;
+}
+
+article.card-books p.precio {
+  font-size: medium;
+  font-weight: 700;
+}
+
+article.card-books button {
+  margin-top: 15px;
+}
+
+
+
+
+@media (min-width: 575px) {
+  section.cards-books-distribution {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  article.card-books {
+    width: 210px;
+  }
+
+  article.card-books h3,
+  article.card-books p {
+    font-size: large;
+  }
+
+  article.card-books p.precio {
+    font-size: x-large;
+    font-weight: 700;
+  }
+}

@@ -8,16 +8,23 @@
 
 /* Comienza navbar */
 
+
+
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
   position: fixed;
   background: var(--qb-c-black);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 25%);
   color: var(--qb-c-white);
   width: 100vw;
   z-index: 99;
+  padding: 10px 0;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+	justify-content: space-around;
+  margin: 0 auto;
 }
 
 header ul {
@@ -78,7 +85,6 @@ a .item-icon {
 /* Button styling */
 .menu-toggle {
   display: inline-block;
-  padding: .75em 15px;
   line-height: 1em;
   font-size: 1em;
   color: #333;
@@ -231,9 +237,16 @@ a .item-icon {
  Horizontal menu
 */
 @media (min-width: 768px) {
-
+  .header-wrapper {
+    width: 70vw;
+    margin: 0 auto;
+  }
   .main-menu .menu-close {
     display: inline;
+  }
+
+  header .qb-icon--search-w {
+    display: none;
   }
   
   /* Undo positioning of off-canvas menu */
