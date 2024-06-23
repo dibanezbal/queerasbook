@@ -54,6 +54,14 @@
     background: no-repeat center/80%  url(../images/icons/icon-arrow-top.svg);
 }
 
+.qb-icon--arrow-right {
+    background: no-repeat center/80%  url(../images/icons/icon-arrow-right.svg);
+}
+
+.qb-icon--arrow-left {
+    background: no-repeat center/80%  url(../images/icons/icon-arrow-left.svg);
+}
+
 .qb-icon--home {
     background: no-repeat center/80%  url(../images/icons/icon-home.svg);
 }

@@ -1,0 +1,48 @@
+.calendar-wrapper {
+    border: 2px solid var(--qb-c-pink-primary);
+    display: none;
+}
+
+.calendar-arrows {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.calendar td.active {
+    content: "";
+    background-color: var(--qb-c-pink-primary);
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 50px;
+    background-position: center;
+    padding: 3px;
+}
+
+#showCalendar:checked ~.calendar-wrapper {
+    display: block;
+    position: absolute;
+    background-color: var(--qb-c-white);
+    width: 85vw;
+}
+
+#showCalendar {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.custom-checkbox-label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+@media (min-width: 375px){
+    #showCalendar:checked ~.calendar-wrapper {
+        width: 320px;
+    }
+}
