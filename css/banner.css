@@ -200,8 +200,8 @@ a {
 
 .carousel-slider-buttons {
   position: absolute;
+  top: 50%;
   width: 95vw;
-  height: 70%;
   display: flex;
   justify-content: space-between;
 }
@@ -255,6 +255,6 @@ a {
   }
 
   .carousel-slider-buttons {
-    height: 100%;
+    top: 50%;
   }
 }

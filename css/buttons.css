@@ -1,10 +1,10 @@
 
 .btn {
 	font-weight: 700;
-	font-size: medium;
+	font-size: small;
 	line-height: 16px;
-    padding: 10px 25px;
-    border-radius: 50px;
+  padding: 10px;
+  border-radius: 50px;
 	cursor: pointer;
 	transition: 0.3s;
 }
@@ -52,6 +52,27 @@
 	color: var(--qb-c-pink-secondary);
 }
 
-.btn--search {
-	
+
+.qb-button-top {
+	position: fixed;
+	z-index: 100;
+	bottom: calc(10vh + 20px);
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	background-color: var(--qb-c-pink-primary) !important;
+	opacity: 1;
+}
+
+.qb-button-top:hover {
+	opacity: 1;
+}
+
+@media (min-width: 575px){
+	.btn {
+		font-size: medium;
+		padding: 10px 25px;
+	}
 }
