@@ -8,9 +8,22 @@ div.searchbar input[type="text"]{
     background-color: var(--qb-c-pink-primary);
     border-style: none;
     padding: 15px;
-    border-radius: 0 50px 50px 0;
+    border-radius: 50px;
     border: 1px solid var(--qb-c-pink-secondary);
     border-left: 0 ;
+}
+
+div.searchbar input[type="text"]::placeholder:after{
+    content: "";
+    background-image: url("../images/icons/search-icon.svg");
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+div.searchbar input[type="text"]:focus, 
+div.searchbar input[type="text"]:active {
+    border: none;
 }
 
 div.searchbar input[type="submit"]{
@@ -22,6 +35,7 @@ div.searchbar input[type="submit"]{
     background-color: var(--qb-c-pink-primary);
     border: 1px solid var(--qb-c-pink-secondary);
     border-right: 0 ;
+    display: none;
 }
 
 ::placeholder {
@@ -29,12 +43,16 @@ div.searchbar input[type="submit"]{
     font-weight: 900;
 }
 
-div.searchbar input[type="text"]:before {
+div.searchbar form:before{
     content: "";
-    display: block;
+    background-image: url("../images/icons/search-icon.svg");
     width: 50px;
     height: 50px;
-}
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
 @media (max-width: 575px){
     .searchbar {

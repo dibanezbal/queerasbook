@@ -6,6 +6,7 @@
     padding: 10px 25px;
     border-radius: 50px;
 	cursor: pointer;
+	transition: 0.3s;
 }
 
 .btn--primary {
@@ -21,13 +22,20 @@
 }
 
 .btn--secondary {
-	border: 1px solid var(--qb-c-pink-primary);
+	border: 2px solid var(--qb-c-pink-secondary);
     background-color: var(--qb-c-gray-primary);
-	color: var(--qb-c-pink-primary);
+	color: var(--qb-c-pink-secondary);
 }
 
+.btn--secondary:hover {
+	border: 2px solid var(--qb-c-pink-primary);
+	color: var(--qb-c-pink-primary);
+	background-color: var(--qb-c-black);
+}
+
+
 .btn--tertiary {
-	border: 1px solid var(--qb-c-pink-primary);
+	border: 2px solid var(--qb-c-pink-primary);
 	color: var(--qb-c-pink-primary);
 	background-color: var(--qb-c-black);
 }
