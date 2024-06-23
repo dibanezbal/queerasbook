@@ -33,11 +33,29 @@
 	src: url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 }
 
-/* Botones */
 
 article {
 	margin-top: 20px;
 }
+
+
+/* Breadcrumbs */
+
+a.breadcrumbs {
+	text-decoration: none;
+	color: var(--qb-c-black);
+	font-size: small;
+	display: inline-flex;
+	margin-bottom: 25px;
+}
+
+a.breadcrumbs .qb-icon {
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+
+/* Container */
 
 .container {
 	width: 85vw;
@@ -47,6 +65,10 @@ article {
 @media (min-width: 575px) {
 	.container {
 		width: 70vw;
+	}
+
+	a.breadcrumbs {
+		margin-bottom: 40px;
 	}
 }
 

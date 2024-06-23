@@ -1,0 +1,29 @@
+.filters-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.filter, select#filter-activity {
+    border: 2px solid var(--qb-c-pink-primary);
+    padding: 15px;
+}
+
+
+.filter-fecha {
+
+}
+
+
+@media (min-width: 575px){
+    .filters-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+}

@@ -70,8 +70,6 @@ header a {
 	flex: 1;
 }
 
-/* Toggle menu icon */
-
 /* Items con iconos */
 a .item-icon {
   display: flex;
@@ -83,7 +81,6 @@ a .item-icon {
   font-size: x-small;
 }
 
-/* Button styling */
 .menu-toggle {
   display: inline-block;
   line-height: 1em;
@@ -91,15 +88,6 @@ a .item-icon {
   color: #333;
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  color: #c00;
-}
-
-/*
- Default styles + Mobile first
- Offscreen menu style
-*/
 .main-menu {
   position: absolute;
   display: none;

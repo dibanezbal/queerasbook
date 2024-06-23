@@ -54,16 +54,20 @@
     background: no-repeat center/80%  url(../images/icons/icon-arrow-top.svg);
 }
 
-.qb-icon-home {
+.qb-icon--home {
     background: no-repeat center/80%  url(../images/icons/icon-home.svg);
 }
 
-.qb-icon-home-b {
+.qb-icon--home-b {
     background: no-repeat center/80%  url(../images/icons/icon-home-b.svg);
 }
 
-.qb-icon-home-active {
+.qb-icon--home-active {
     background: no-repeat center/80%  url(../images/icons/icon-home-active.svg);
+}
+
+.qb-icon--calendar {
+    background: no-repeat center/80%  url(../images/icons/icon-calendar.svg);
 }
 
 .qb-icon--facebook {
