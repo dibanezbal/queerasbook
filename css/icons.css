@@ -70,6 +70,14 @@
     background: no-repeat center/80%  url(../images/icons/arrow-top-icon.svg);
 }
 
+.qb-icon-home {
+    background: no-repeat center/80%  url(../images/icons/home-icon.svg);
+}
+
+.qb-icon-home-active {
+    background: no-repeat center/80%  url(../images/icons/home-icon-active.svg);
+}
+
 .qb-icon--facebook {
     background: no-repeat center  url(../images/icons/facebook-icon.svg);
 }
