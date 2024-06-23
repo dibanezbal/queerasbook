@@ -4,7 +4,7 @@
  * @format
  */
 
-section.cards-books-wrapper {
+div.cards-books-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -156,7 +156,7 @@ span.max-deal {
 @media (min-width: 575px) {
   /* CARDS BOOKS - NOVEDADES Y LOS MÁS VENDIDOS */
 
-  section.cards-books-wrapper {
+  div.cards-books-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
