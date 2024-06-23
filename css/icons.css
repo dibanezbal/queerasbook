@@ -62,6 +62,10 @@
     background: no-repeat center/80%  url(../images/icons/icon-arrow-left.svg);
 }
 
+.qb-icon--arrow-down {
+    background: no-repeat center/80%  url(../images/icons/icon-arrow-down.svg);
+}
+
 .qb-icon--home {
     background: no-repeat center/80%  url(../images/icons/icon-home.svg);
 }

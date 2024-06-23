@@ -91,23 +91,22 @@
         <a class="breadcrumbs" href="./index.html"><i class="qb-icon qb-icon--home-b"></i> > Eventos</a>
         <h2>Eventos</h2>
         <div class="filters-wrapper">
-          <div class="filter-dropdown">
-            <label hidden for="filter-actividad">Filtra por actividades</label>
-            <select class="filter" name="filter-actividad" id="filter-activity">Filtra por actividades
-              <option value="Firma de libros">Firma de libros</option>
-              <option value="Talleres">Talleres</option>
-              <option value="Club de lectura">Club de lectura</option>
-              <option value="Ciclos">Ciclos</option>
-            </select>
-          </div>
+          <div class="filter-container">
+            <label class="filter filter-dropdown" for="showFilter">Filtrar por actividades</label>
+            <input type="checkbox" id="showFilter" name="showFilter" />
+            <ul>
+                <li>Firma de libros</li>
+                <li>Talleres</li>
+                <li>Club de lectura</li>
+                <li>Ciclos</li>
+            </ul>
+        </div>
+        
           <div class="calendar-container">
-              <input type="checkbox" id="showCalendar" name="showCalendar" >
-              <label for="showCalendar" class="custom-checkbox-label">
-                <div class="filter filter-fecha">
-                  <h5>Filtrar por fecha</h5>
-                  <i class="qb-icon qb-icon--calendar"></i>
-                </div>
-              </label>
+            <input type="checkbox" id="showCalendar" name="showCalendar" />
+            <label for="showCalendar" class="filter filter-calendar custom-checkbox-label">
+              Filtrar por fecha
+            </label>
 
             <div id="calendar" class="calendar-wrapper">
               <div class="calendar-arrows">
@@ -115,7 +114,7 @@
                 <h5>Mayo</h5>
                 <i class="qb-icon qb-icon--arrow-right"></i>
               </div>
-              
+
               <table class="calendar" align="center" cellspacing="21" cellpadding="21">
                 <thead>
                   <tr>

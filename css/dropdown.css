@@ -7,77 +7,68 @@
     font-weight: 600;
 }
 
-.filter {
-    border: 2px solid var(--qb-c-pink-primary);
-    padding: 20px;
+#showFilter + ul {
+    display: none;
+}
+
+#showFilter {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+#showFilter:checked + ul {
+    display: block;
+    position: absolute;
+}
+
+.filter-container {
     width: 85vw;
-    margin-bottom: 15px;
-}
-
-select {
-    width: 268px;
-    font-size: 16px;
-    line-height: 1.5;
-    border: 0;
-    background: url('../images/icons/icon-arrow-down.svg') no-repeat right;
-    -webkit-appearance: none;
-    background-position: calc(100% - 1.3rem) center !important;
-    font-size: medium;
-    font-weight: 600;
-}
-
-select:focus, select:active, select:focus-visible {
-    border: 2px solid var(--qb-c-notifications) !important;
-}
-
-.filter-fecha {
+    border: 2px solid var(--qb-c-pink-primary);
+    padding: 15px;
+    margin: 10px 0;
+    cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
 }
 
-.filter-fecha h5 {
-    font-size: medium;
-    font-weight: 600;
+.filter-dropdown:after {
+    content: "";
+    background: url("../images/icons/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.filter-container ul {
+    position: absolute;
+    top: 49px;
+    left: -2px;
+    background-color: var(--qb-c-white);
+    width: 85vw;
+    border: 1px solid var(--qb-c-pink-primary);
+    box-shadow: 1px 6px 10px rgba(0,0,0,0.3)
+}
+
+.filter-container ul li {
+    list-style: none;
+    padding: 15px 15px 15px 30px;
+    border: 1px solid var(--qb-c-pink-primary);
+    font-weight: 400;
+}
 
 @media (min-width: 575px){
-    .filters-wrapper {
-        display: flex;
-    }
-
-    .filter {
-        width: 75vw;
-    }
 }
 
 @media (min-width: 768px){
-    .filters-wrapper div:first-child {
-        margin-right: 5px;
-    }
-
-    .filters-wrapper div:nth-child(2){
-        margin-left: 5px;
-    }
-
-    .filters-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .filter {
-        border: 2px solid var(--qb-c-pink-primary);
-        padding: 15px;
-        margin-bottom: 15px;
-        width: 280px;
-    }
-
-    .filter-fecha {
-        padding: 12px 15px;
-    }
-    
 }
+
+
+
+
+
