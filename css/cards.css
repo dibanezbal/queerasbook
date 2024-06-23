@@ -73,7 +73,6 @@ article.card-books h4.rating:before {
   background-repeat: no-repeat;
 }
 
-
 /* CARDS DEALS - OFERTAS Y PROMOCIONES */
 
 .cards-deals-wrapper {
@@ -81,33 +80,36 @@ article.card-books h4.rating:before {
   flex-direction: column;
 }
 
+.cards-deals-wrapper article img {
+  background-color: var(--qb-c-pink-primary);
+  object-fit: cover;
+}
+
 .cards-deals-wrapper article {
   position: relative;
 }
 
 .text-over-image {
-  width: 100%;
+  width: 50%;
   position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 1;
+  right: 0;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--qb-c-black);
 }
 
-.cards-deals-wrapper article p {
-  text-align: center;
-  color: var(--qb-c-white);
-  font-size: large;
+.cards-deals-wrapper article h3 {
+  font-size: medium;
   font-weight: 700;
-  transform: translateY(10%);
-}
-
-.text-over-image.text-deal {
-  text-align: center;
 }
 
 span.max-deal {
-  font-size: xx-large;
+  font-size: x-large;
+  font-weight: 900;
 }
 
 .cards-deals-wrapper article img {
@@ -173,14 +175,14 @@ span.max-deal {
   }
 
   /* CARDS DEALS - OFERTAS Y PROMOCIONES */
-  .cards-deals-wrapper article p {
+
+  .cards-deals-wrapper article h3 {
     font-size: large;
   }
 
   .cards-events-wrapper article .text-events {
     font-size: small;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -191,30 +193,26 @@ span.max-deal {
   }
 
   /* CARDS DEALS - OFERTAS Y PROMOCIONES */
-
   .cards-deals-wrapper {
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  .cards-deals-wrapper article img {
-    transition: filter 0.3s ease-in-out;
+  .cards-deals-wrapper article:first-child {
+    margin-right: 10px
   }
 
-  .cards-deals-wrapper article a:hover img {
-    filter: opacity(50%);
+  .cards-deals-wrapper article:nth-child(2) {
+    margin-left: 10px
   }
 
-  .cards-deals-wrapper article a:hover .text-deal {
-    color: var(--qb-c-black);
+  .cards-deals-wrapper article h3 {
+    font-size: large;
   }
 
-  .cards-deals-wrapper article p {
+  span.max-deal {
     font-size: x-large;
   }
 
-  .text-over-image {
-    transform: translate(-50%, 50%);
-  }
 
   /* CARDS EVENTS */
   .cards-events-wrapper {
@@ -234,32 +232,37 @@ span.max-deal {
   }
 }
 
+@media (min-width: 1024px) {
+    /* CARDS DEALS - OFERTAS Y PROMOCIONES */
 
-@media (min-width: 1024px){
+    .cards-deals-wrapper {
+      flex-direction: row;
+    }
+    .cards-deals-wrapper article h3 {
+      font-size: large;
+    }
+  
+    span.max-deal {
+      font-size: xx-large;
+    }
 
-  /* CARDS DEALS - OFERTAS Y PROMOCIONES */
+    .text-deal {
+      padding: 0 2px;
+    }
   
-  .cards-deals-wrapper {
-    flex-direction: row;
+
+  /* CARDS EVENTS */
+  .cards-events-wrapper article .text-events {
+    font-size: medium;
   }
-  
-  .cards-deals-wrapper article:first-child {
-    margin-right: 20px;
-  }
-  
-  .cards-deals-wrapper article:nth-child(2) {
-    margin-left: 20px;
-  }
-  
-  .cards-deals-wrapper article p {
+}
+
+@media (min-width: 1200px){
+  .cards-deals-wrapper article h3 {
     font-size: x-large;
   }
 
-  .text-over-image {
-    transform: translate(-50%, 50%);
-  }
-    /* CARDS EVENTS */
-  .cards-events-wrapper article .text-events {
-    font-size: medium;
+  span.max-deal {
+    font-size: xx-large;
   }
 }
