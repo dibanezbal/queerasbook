@@ -15,7 +15,7 @@ div.searchbar input[type="text"]{
 
 div.searchbar input[type="text"]::placeholder:after{
     content: "";
-    background-image: url("../images/icons/search-icon.svg");
+    background-image: url("../images/icons/icon-search.svg");
     display: block;
     width: 50px;
     height: 50px;
@@ -28,7 +28,7 @@ div.searchbar input[type="text"]:active {
 
 div.searchbar input[type="submit"]{
     width: 50px;
-    background-image: url("../images/icons/search-icon.svg");
+    background-image: url("../images/icons/icon-search.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50px 0 0 50px;
@@ -45,7 +45,7 @@ div.searchbar input[type="submit"]{
 
 div.searchbar form:before{
     content: "";
-    background-image: url("../images/icons/search-icon.svg");
+    background-image: url("../images/icons/icon-search.svg");
     width: 50px;
     height: 50px;
     display: block;

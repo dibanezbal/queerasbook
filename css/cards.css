@@ -14,7 +14,7 @@ article.card-books {
 article.card-books:before {
   content: "";
   background-color: var(--qb-c-gray-primary);
-  background-image: url("../images/icons/heart-icon.svg");
+  background-image: url("../images/icons/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 30px;
