@@ -19,61 +19,61 @@
 }
 
 .qb-icon--hamburger {
-    background: no-repeat center/80% url(../images/icons/menu-icon.svg);
+    background: no-repeat center/80% url(../images/icons/icon-menu.svg);
 }
 
 .qb-icon--close {
-    background: no-repeat center/80%  url(../images/icons/close-icon.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-close.svg);
 }
 
 .qb-icon--profile {
-    background: no-repeat center/80%  url(../images/icons/profile-icon.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-profile.svg);
 }
 
 .qb-icon--cart {
-    background: no-repeat center/80%  url(../images/icons/cart-icon.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-cart.svg);
 }
 
 .qb-icon--search {
-    background: no-repeat center/80%  url(../images/icons/search-icon.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-search.svg);
 }
 
 .qb-icon--search-w {
-    background: no-repeat center/80%  url(../images/icons/search-icon-w.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-search-w.svg);
 }
 
 .qb-icon--star {
-    background: no-repeat center/80%  url(../images/icons/star-icon.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-star.svg);
 }
 
 .qb-icon--heart {
-    background: no-repeat center/80%  url(../images/icons/heart-icon.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-heart.svg);
 }
 
 .qb-icon--arrow-top {
-    background: no-repeat center/80%  url(../images/icons/arrow-top-icon.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-arrow-top.svg);
 }
 
 .qb-icon-home {
-    background: no-repeat center/80%  url(../images/icons/home-icon.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-home.svg);
 }
 
 .qb-icon-home-active {
-    background: no-repeat center/80%  url(../images/icons/home-icon-active.svg);
+    background: no-repeat center/80%  url(../images/icons/icon-home-active.svg);
 }
 
 .qb-icon--facebook {
-    background: no-repeat center  url(../images/icons/facebook-icon.svg);
+    background: no-repeat center  url(../images/icons/icon-facebook.svg);
 }
 
 .qb-icon--twitter {
-    background: no-repeat center url(../images/icons/twitter-icon.svg);
+    background: no-repeat center url(../images/icons/icon-twitter.svg);
 }
 
 .qb-icon--instagram {
-    background: no-repeat center  url(../images/icons/instagram-icon.svg);
+    background: no-repeat center  url(../images/icons/icon-instagram.svg);
 }
 
 .qb-icon--whatsapp {
-    background: no-repeat center url(../images/icons/whatsapp-icon.svg);
+    background: no-repeat center url(../images/icons/icon-whatsapp.svg);
 }

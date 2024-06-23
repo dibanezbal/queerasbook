@@ -8,8 +8,6 @@
 
 /* Comienza navbar */
 
-
-
 header {
   position: fixed;
   background: var(--qb-c-black);
@@ -118,7 +116,6 @@ a .item-icon {
   list-style: none;
   margin: 0;
   padding: 2.5em 0 0;
-  /* Hide shadow w/ -8px while 'closed' */
   -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
      -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
           box-shadow: -8px 0 8px rgba(0,0,0,.5);
@@ -241,17 +238,9 @@ a .item-icon {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-
-  /* #navbar-mobile-menu a:hover {
-    border-bottom: 2px solid var(--qb-c-pink-primary) !important; 
-   } */
 }
 
 
-/*
- Larger screen styling
- Horizontal menu
-*/
 @media (min-width: 768px) {
   .header-wrapper {
     width: 73vw;

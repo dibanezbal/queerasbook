@@ -239,13 +239,6 @@ a {
   #carousel article img {
     height: 550px;
   }
-
-  .carousel-active {
-    position: absolute;
-    top: 34rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 @media (min-width: 768px){

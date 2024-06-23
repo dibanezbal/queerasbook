@@ -1,8 +1,4 @@
-/**
- * CARDS BOOKS
- *
- * @format
- */
+/* CARDS BOOKS */
 
 div.cards-books-wrapper {
   display: flex;
@@ -161,7 +157,7 @@ span.max-deal {
 
   div.cards-books-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
   }
@@ -196,18 +192,6 @@ span.max-deal {
   }
 
   /* CARDS DEALS - OFERTAS Y PROMOCIONES */
-  .cards-deals-wrapper {
-    flex-direction: row;
-  }
-
-  .cards-deals-wrapper article:first-child {
-    margin-right: 10px
-  }
-
-  .cards-deals-wrapper article:nth-child(2) {
-    margin-left: 10px
-  }
-
   .cards-deals-wrapper article h3 {
     font-size: large;
   }
@@ -218,25 +202,22 @@ span.max-deal {
 
 
   /* CARDS EVENTS */
-  .cards-events-home-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
   .cards-events-home-wrapper article {
-    width: 50vw;
     height: 170px;
   }
-  .cards-events-home-wrapper article:first-child {
-    margin-right: 20px;
-  }
 
-  .cards-events-home-wrapper article:nth-child(2) {
-    margin-left: 20px;
-  }
 }
 
 @media (min-width: 1024px) {
+
+
+  div.cards-books-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
     /* CARDS DEALS - OFERTAS Y PROMOCIONES */
 
     .cards-deals-wrapper {
@@ -244,6 +225,14 @@ span.max-deal {
     }
     .cards-deals-wrapper article h3 {
       font-size: large;
+    }
+
+    .cards-deals-wrapper article:first-child {
+      margin-right: 10px
+    }
+  
+    .cards-deals-wrapper article:nth-child(2) {
+      margin-left: 10px
     }
   
     span.max-deal {
@@ -258,6 +247,21 @@ span.max-deal {
   /* CARDS EVENTS */
   .cards-events-home-wrapper article .text-events {
     font-size: medium;
+  }
+  .cards-events-home-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cards-events-home-wrapper article:first-child {
+    margin-right: 10px;
+  }
+
+  .cards-events-home-wrapper article:nth-child(2) {
+    margin-left: 10px;
+  }
+  .cards-events-home-wrapper article {
+    width: 50vw;
   }
 }
 
