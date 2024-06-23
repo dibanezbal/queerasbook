@@ -114,7 +114,8 @@ span.max-deal {
 }
 
 /* CARDS EVENTS HOME - EVENTOS */
-.cards-events-home-wrapper {
+.cards-events-home-wrapper, 
+.cards-events-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -150,6 +151,49 @@ span.max-deal {
 
 .cards-events-home-wrapper .btn--link {
   margin: 0 auto;
+}
+
+
+/* CARDS EVENTOS - PÁGINA EVENTOS */
+
+.cards-events-home-wrapper, 
+.cards-events-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards-events-wrapper article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid var(--qb-c-pink-primary);
+  background: var(--qb-c-gray-primary);
+}
+
+.cards-events-wrapper article img {
+  object-fit: cover;
+  height: 115px;
+}
+
+.cards-events-wrapper article .text-events {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  font-size: medium;
+}
+
+.cards-events-wrapper article .text-events h3 {
+  color: var(--qb-c-pink-secondary);
+}
+
+.cards-events-wrapper .btn--link {
+  margin: 0 auto;
+  font-weight: 700;
 }
 
 @media (min-width: 575px) {
@@ -204,6 +248,14 @@ span.max-deal {
   /* CARDS EVENTS */
   .cards-events-home-wrapper article {
     height: 170px;
+  }
+
+  /* CARDS EVENTS - PÁGINA EVENTOS */
+  .cards-events-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
   }
 
 }
@@ -262,6 +314,11 @@ span.max-deal {
   }
   .cards-events-home-wrapper article {
     width: 50vw;
+  }
+
+  /* CARDS EVENTS - PÁGINA EVENTOS */
+  .cards-events-wrapper article .text-events {
+    font-size: medium;
   }
 }
 

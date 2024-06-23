@@ -49,3 +49,21 @@ article {
 		width: 70vw;
 	}
 }
+
+@media (min-width: 1024px) {
+	.container {
+		width: 77vw;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 72vw;
+	}
+}
+
+@media (min-width: 1400px) {
+	.container {
+		width: 66vw;
+	}
+}

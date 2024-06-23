@@ -58,6 +58,10 @@
     background: no-repeat center/80%  url(../images/icons/icon-home.svg);
 }
 
+.qb-icon-home-b {
+    background: no-repeat center/80%  url(../images/icons/icon-home-b.svg);
+}
+
 .qb-icon-home-active {
     background: no-repeat center/80%  url(../images/icons/icon-home-active.svg);
 }
