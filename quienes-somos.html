@@ -73,26 +73,26 @@
           <form id="form-contact" action="#">
             <label for="fnombre">Nombre<span class="mandatory-field"> *</span></label
             ><br>
-            <input type="text" id="fnombre" name="fnombre" value="Introduce tu nombre aquí"><br>
+            <input onfocus="this.value=''" type="text" id="fnombre" name="fnombre" value="Introduce tu nombre aquí"><br>
             <label for="ftelefono">Número de teléfono</label><br>
-            <input type="number" id="ftelefono" name="ftelefono" value="0034636363636"><br>
+            <input onfocus="this.value=''" type="number" id="ftelefono" name="ftelefono" value="0034636363636"><br>
             <label for="email">Email<span class="mandatory-field"> *</span></label><br>
-            <input type="text" id="email" name="email" value="mail@mail.com"><br>
+            <input onfocus="this.value=''" type="text" id="email" name="email" value="ej: mail@mail.com"><br>
             <label for="fcomentario">Comentario<span class="mandatory-field"> *</span></label><br>
-            <textarea id="fcomentario" name="fcomentario">Introduce aquí tu comentrio</textarea>
+            <textarea onfocus="this.value=''" id="fcomentario" name="fcomentario">Introduce aquí tu comentrio</textarea>
             <br>
             <input class="btn btn--primary" type="submit" value="Enviar">
           </form>
         </div>
 
-        <div id="map">
+        <div id="map-wrapper">
           <h3>Dirección</h3>
           <p>
             Carrer Rosselló, 475<br>
             08025 Barcelona
           </p>
 
-          <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=430&amp;height=500&amp;hl=en&amp;q=C/%20del%20Rossell%C3%B3,%20475,%20L'Eixample,%2008025%20Barcelona+(Mapa)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">gps watches</a></iframe>
+          <iframe class="map" aria-label="Mapa de ubicación de la librería" src="https://maps.google.com/maps?width=430&amp;height=500&amp;hl=en&amp;q=C/%20del%20Rossell%C3%B3,%20475,%20L'Eixample,%2008025%20Barcelona+(Mapa)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
       </section>
     </main>
