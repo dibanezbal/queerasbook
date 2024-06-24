@@ -7,7 +7,7 @@ div.searchbar input[type="text"]{
     width: 100%;
     background-color: var(--qb-c-pink-primary);
     border-style: none;
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 50px;
     border: 1px solid var(--qb-c-pink-secondary);
     border-left: 0 ;
@@ -47,7 +47,7 @@ div.searchbar form:before{
     content: "";
     background-image: url("../images/icons/icon-search.svg");
     width: 50px;
-    height: 50px;
+    height: 40px;
     display: block;
     position: absolute;
     background-repeat: no-repeat;

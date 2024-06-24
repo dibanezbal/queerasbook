@@ -80,12 +80,12 @@ a.breadcrumbs .qb-icon {
 
 @media (min-width: 1200px) {
 	.container {
-		width: 72vw;
+		width: 70vw;
 	}
 }
 
 @media (min-width: 1400px) {
 	.container {
-		width: 66vw;
+		width: 69vw;
 	}
 }

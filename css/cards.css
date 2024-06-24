@@ -65,7 +65,7 @@ article.card-books button {
 
 article.card-books h4.rating:before {
   content: "";
-  background: url("../images/icons/star-icon.svg");
+  background: url("../images/icons/icon-star.svg");
   width: 25px;
   height: 20px;
   display: inline-block;

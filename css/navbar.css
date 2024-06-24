@@ -71,10 +71,12 @@ header a {
 }
 
 /* Items con iconos */
-a .item-icon {
+a.item-icon {
   display: flex;
   flex-direction: column;
 	font-size: x-small;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-text a {
@@ -87,6 +89,7 @@ a .item-icon {
   font-size: 1em;
   color: #333;
 }
+
 
 .main-menu {
   position: absolute;
