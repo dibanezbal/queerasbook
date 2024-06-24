@@ -36,10 +36,20 @@
   src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 }
 
-main#tienda section.container-tienda {
+/* Setup sin carousel hero */
+
+main#tienda section.container-no-slider,
+main#quienes-somos section.container-no-slider {
   margin-top: 0;
   padding-top: 100px;
 }
+
+main#quienes-somos h2 {
+  margin-top: 40px;
+  font-size: larger;
+}
+
+/* Margins and alignments */
 
 @media (max-width: 340px) {
   .qb-margin-top-mobile {
@@ -50,6 +60,12 @@ main#tienda section.container-tienda {
 @media (min-width: 341px) and (max-width: 575px){
   .qb-margin-top-mobile {
     margin-top: 0;
+  }
+}
+
+@media (max-width: 768px){
+  .align-center-mobile {
+    text-align: center;
   }
 }
 

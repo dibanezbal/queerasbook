@@ -1,99 +1,103 @@
-/* Iconos */
+/**
+ * Iconos
+ *
+ * @format
+ */
 
 .qb-icon {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    width: 30px;
-    height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
 }
 
 .footer-social .qb-icon {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .qb-icon-float-left {
-    float: left;
-    clear: left;
+  float: left;
+  clear: left;
 }
 
 .qb-icon--hamburger {
-    background: no-repeat center/80% url(../images/icons/icon-menu.svg);
+  background: no-repeat center/80% url(../images/icons/icon-menu.svg);
 }
 
 .qb-icon--close {
-    background: no-repeat center/80%  url(../images/icons/icon-close.svg);
+  background: no-repeat center/80% url(../images/icons/icon-close.svg);
 }
 
 .qb-icon--profile {
-    background: no-repeat center/80%  url(../images/icons/icon-profile.svg);
+  background: no-repeat center/80% url(../images/icons/icon-profile.svg);
 }
 
 .qb-icon--cart {
-    background: no-repeat center/80%  url(../images/icons/icon-cart.svg);
+  background: no-repeat center/80% url(../images/icons/icon-cart.svg);
 }
 
 .qb-icon--search {
-    background: no-repeat center/80%  url(../images/icons/icon-search.svg);
+  background: no-repeat center/80% url(../images/icons/icon-search.svg);
 }
 
 .qb-icon--search-w {
-    background: no-repeat center/80%  url(../images/icons/icon-search-w.svg);
+  background: no-repeat center/80% url(../images/icons/icon-search-w.svg);
 }
 
 .qb-icon--star {
-    background: no-repeat center/80%  url(../images/icons/icon-star.svg);
+  background: no-repeat center/80% url(../images/icons/icon-star.svg);
 }
 
 .qb-icon--heart {
-    background: no-repeat center/80%  url(../images/icons/icon-heart.svg);
+  background: no-repeat center/80% url(../images/icons/icon-heart.svg);
 }
 
 .qb-icon--arrow-top {
-    background: no-repeat center/80%  url(../images/icons/icon-arrow-top.svg);
+  background: no-repeat center/80% url(../images/icons/icon-arrow-top.svg);
 }
 
 .qb-icon--arrow-right {
-    background: no-repeat center/80%  url(../images/icons/icon-arrow-right.svg);
+  background: no-repeat center/80% url(../images/icons/icon-arrow-right.svg);
 }
 
 .qb-icon--arrow-left {
-    background: no-repeat center/80%  url(../images/icons/icon-arrow-left.svg);
+  background: no-repeat center/80% url(../images/icons/icon-arrow-left.svg);
 }
 
 .qb-icon--arrow-down {
-    background: no-repeat center/80%  url(../images/icons/icon-arrow-down.svg);
+  background: no-repeat center/80% url(../images/icons/icon-arrow-down.svg);
 }
 
 .qb-icon--home {
-    background: no-repeat center/80%  url(../images/icons/icon-home.svg);
+  background: no-repeat center/80% url(../images/icons/icon-home.svg);
 }
 
 .qb-icon--home-b {
-    background: no-repeat center/80%  url(../images/icons/icon-home-b.svg);
+  background: no-repeat center/80% url(../images/icons/icon-home-b.svg);
 }
 
 .qb-icon--home-active {
-    background: no-repeat center/80%  url(../images/icons/icon-home-active.svg);
+  background: no-repeat center/80% url(../images/icons/icon-home-active.svg);
 }
 
 .qb-icon--calendar {
-    background: no-repeat center/80%  url(../images/icons/icon-calendar.svg);
+  background: no-repeat center/80% url(../images/icons/icon-calendar.svg);
 }
 
 .qb-icon--facebook {
-    background: no-repeat center  url(../images/icons/icon-facebook.svg);
+  background: no-repeat center url(../images/icons/icon-facebook.svg);
 }
 
 .qb-icon--twitter {
-    background: no-repeat center url(../images/icons/icon-twitter.svg);
+  background: no-repeat center url(../images/icons/icon-twitter.svg);
 }
 
 .qb-icon--instagram {
-    background: no-repeat center  url(../images/icons/icon-instagram.svg);
+  background: no-repeat center url(../images/icons/icon-instagram.svg);
 }
 
 .qb-icon--whatsapp {
-    background: no-repeat center url(../images/icons/icon-whatsapp.svg);
+  background: no-repeat center url(../images/icons/icon-whatsapp.svg);
 }

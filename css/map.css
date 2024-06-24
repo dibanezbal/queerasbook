@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+  .form-map {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-map div {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+  }
+
+  .form-map div:first-child {
+    width: 50%;
+    margin-right: 30px;
+  }
+}

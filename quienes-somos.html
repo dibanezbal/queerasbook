@@ -46,186 +46,55 @@
       </div>
     </header>
 
-    <main id="tienda">
+    <main id="quienes-somos">
       <a aria-label="Volver arriba" href="#"></a>
 
-      <!-- #carousel -->
-      <!-- Section cards of books - Novedades-->
-      <section class="container container-tienda">
+      <section class="container container-no-slider">
         <a class="breadcrumbs" href="./index.html"><i class="qb-icon qb-icon--home-b"></i> > ¿Quiénes somos?</a>
         <h1>¿Quiénes somos?</h1>
-        <h2>Un poco de historia</h2>
-        <div class="filters-wrapper">
-          <div class="filter-container">
-            <label class="filter filter-dropdown" aria-label="filtrar-categorias" for="showFilter1">Filtrar por categorías</label>
-            <input class="dropdown-arrow" type="checkbox" id="showFilter1" name="showFilter1" />
-            <ul>
-              <li>Recién añadidos</li>
-              <li>Novelas</li>
-              <li>Ciencia ficción</li>
-              <li>Literatura Trans</li>
-              <li>Literatura Gay</li>
-              <li>Literatura Bisexual</li>
-              <li>Literatura Lesbiana</li>
-              <li>Teoría Queer</li>
-              <li>Estudios de género</li>
-            </ul>
-          </div>
+        <h2 class="align-center-mobile">Un poco de historia...</h2>
 
-          <div class="filter-container">
-            <label class="filter filter-dropdown" aria-label="ordenar-por" for="showFilter2">Ordenar por...</label>
-            <input class="dropdown-arrow" type="checkbox" id="showFilter2" name="showFilter2" />
-            <ul>
-              <li>Más caros primero</li>
-              <li>Más baratos primero</li>
-              <li>Mejor valorados</li>
-              <li>Los más nuevos primero</li>
-            </ul>
-          </div>
+        <div class="promo">
+            <img src="./images/historia1.png" alt="Foto de la librería">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum viverra risus sed cursus. Integer elementum ante sit amet faucibus facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim suscipit eros vitae.</p>
+        </div>
+        <div class="promo">
+            <img src="./images/historia2.png" alt="Foto de la librería desde dentro">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum viverra risus sed cursus. Integer elementum ante sit amet faucibus facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dignissim suscipit eros vitae.</p>
         </div>
       </section>
-      <section class="container">
-        <h2>Recién añadidos</h2>
-        <div class="cards-books-wrapper">
-          <article class="card-books">
-            <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
-            <h3>The transgender Issue</h3>
-            <p>Shon Faye</p>
-            <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
-            <button class="btn btn--primary">Comprar</button>
-          </article>
+      <section class="container form-map">
+				<div id="contact-form">
+					<h2>¿Quieres contactarnos?</h2>
+					<p>Déjanos un comentario o cualquier pregunta que tengas, te responderemos lo más pronto posible.</p>
 
-          <article class="card-books">
-            <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
-            <h3>Alguien tendrá que serlo</h3>
-            <p>Gustavo Pecoraro</p>
-            <h4 class="precio">16,95 €</h4>
-            <button class="btn btn--primary">Comprar</button>
-          </article>
+					
+					<form id="form-contact" action="#">
+						<label for="fnombre">Nombre<span class="mandatory-field"> *</span></label><br>
+            <input type="text" id="fnombre" name="fnombre" value="Introduce tu nombre aquí"><br>
+            <label for="ftelefono">Número de teléfono</label><br>
+            <input type="number" id="ftelefono" name="ftelefono" value="+34636363636"><br>
+            <label for="email">Email<span class="mandatory-field"> *</span><label><br>
+            <input type="text" id="email" name="email" value="mail@mail.com"><br>
+            <label for="fcomentario">Comentario<span class="mandatory-field"> *</span></label><br>
+            <textarea id="fcomentario" name="fcomentario">Introduce aquí tu comentrio</textarea>
+            <br>
+						
+            <input class="btn btn--primary" type="submit" value="Enviar">
+          </form> 
+				</div>
 
-          <article class="card-books">
-            <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
-            <h3>¿Quién teme al género?</h3>
-            <p>Judith Butler</p>
-            <h4 class="precio">24,00 €</h4>
-            <button class="btn btn--primary">Comprar</button>
-          </article>
 
-          <article class="card-books">
-            <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
-            <h3>No todas las chicas</h3>
-            <p>Jennifer Dugan</p>
-            <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
-            <button class="btn btn--primary">Comprar</button>
-          </article>
-        </div>
+				<div id="map">
+					<h2>Dirección</h2>
+					<p>Carrer Rosselló, 475<br> 08025 Barcelona</p>
 
-        <div class="cards-books-wrapper">
-            <article class="card-books">
-              <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
-              <h3>The transgender Issue</h3>
-              <p>Shon Faye</p>
-              <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
-              <h3>Alguien tendrá que serlo</h3>
-              <p>Gustavo Pecoraro</p>
-              <h4 class="precio">16,95 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
-              <h3>¿Quién teme al género?</h3>
-              <p>Judith Butler</p>
-              <h4 class="precio">24,00 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
-              <h3>No todas las chicas</h3>
-              <p>Jennifer Dugan</p>
-            <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-          </div>
-
-          <div class="cards-books-wrapper">
-            <article class="card-books">
-              <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
-              <h3>The transgender Issue</h3>
-              <p>Shon Faye</p>
-              <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
-              <h3>Alguien tendrá que serlo</h3>
-              <p>Gustavo Pecoraro</p>
-              <h4 class="precio">16,95 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
-              <h3>¿Quién teme al género?</h3>
-              <p>Judith Butler</p>
-              <h4 class="precio">24,00 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
-              <h3>No todas las chicas</h3>
-              <p>Jennifer Dugan</p>
-            <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-          </div>
-
-          <div class="cards-books-wrapper">
-            <article class="card-books">
-              <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
-              <h3>The transgender Issue</h3>
-              <p>Shon Faye</p>
-              <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
-              <h3>Alguien tendrá que serlo</h3>
-              <p>Gustavo Pecoraro</p>
-              <h4 class="precio">16,95 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
-              <h3>¿Quién teme al género?</h3>
-              <p>Judith Butler</p>
-              <h4 class="precio">24,00 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
-              <h3>No todas las chicas</h3>
-              <p>Jennifer Dugan</p>
-            <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-          </div>
+					<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=430&amp;height=500&amp;hl=en&amp;q=C/%20del%20Rossell%C3%B3,%20475,%20L'Eixample,%2008025%20Barcelona+(Mapa)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">gps watches</a></iframe>
+				</div>
 
         
 
       </section>
-      <!-- End of Section cards of books - Los más vendidos-->
     </main>
     <footer>
       <div class="footer-first-block">
