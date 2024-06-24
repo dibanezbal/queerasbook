@@ -243,7 +243,8 @@ a {
 
 @media (min-width: 768px){
   #carousel .info h1 {
-    font-size: xx-large;
+    font-size: 3em;
+    line-height: 1.5em;
     margin-bottom: 40px;
   }
 

@@ -1,17 +1,19 @@
 /**
  * CARDS BOOKS
- *
- * @format
  */
 
 div.cards-books-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(130px, auto);
+}
+
+#tienda div.cards-books-wrapper {
+  margin-bottom: 40px;
 }
 
 article.card-books {
-  width: 130px;
   position: relative;
 }
 
@@ -205,11 +207,8 @@ span.max-deal {
 @media (min-width: 575px) {
   /* CARDS BOOKS - NOVEDADES Y LOS MÁS VENDIDOS */
 
-  div.cards-books-wrapper {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
+  .cards-events-wrapper {
+    gap: 10px;
   }
 
   article.card-books h3,
@@ -266,10 +265,10 @@ span.max-deal {
 
 @media (min-width: 1024px) {
   div.cards-books-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(130px, auto);
   }
 
   /* CARDS DEALS - OFERTAS Y PROMOCIONES */

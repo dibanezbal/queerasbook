@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="La nueva librería online para una comunidad orgullosa." />
+    <title>Inicio - Queer as Book</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <a class="logo-desktop" href="index.html"><img src="./images/logos/logo-white-pink.svg" alt="Logo Queer as Book en header desktop" width="80" /></a>
+
+        <!-- -->
+        <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Abrir menu"><i class="qb-icon qb-icon--hamburger" aria-hidden="true"></i></a>
+
+        <a aria-label="Abrir búsqueda" class="item-icon" href="#"><i class="qb-icon qb-icon--search-w"></i></a>
+
+        <!-- Barra de navegación -->
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+          <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Cerrar menu"><i class="qb-icon-float-left qb-icon qb-icon--close" aria-hidden="true"></i></a>
+          <ul class="navbar-desktop-links" id="navbar-mobile-menu">
+            <li><h4>Menú</h4></li>
+            <li><a class="hover-underline-animation" href="tienda.html">Tienda</a></li>
+            <li><a class="hover-underline-animation" href="eventos.html">Eventos</a></li>
+            <li><a class="hover-underline-animation" href="quienes-somos.html">Quiénes somos</a></li>
+          </ul>
+
+          <a class="logo-mobile" href="index.html"><img src="./images/logos/logo-black-sm.svg" alt="Logo Queer as Book en header para mobile" width="40" /></a>
+        </nav>
+
+        <div class="searchbar">
+          <form action="#" method="post" accept-charset="utf-8" id="searchbar">
+            <label aria-label="Barra de búsqueda" title="buscar" for="searchbar-field"></label><br />
+            <input class="searchbar-text" type="text" name="email" placeholder="Buscar un producto o evento" value="" id="searchbar-field" />
+            <input aria-label="Botón oculto para buscar" aria-hidden="true" type="submit" value="" />
+          </form>
+        </div>
+
+        <a class="logo-mobile" href="index.html"><img src="./images/logos/logo-white-pink-sm.svg" alt="Logo Queer as Book" width="40" /></a>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        <a aria-label="perfil" class="item-icon" href="#"><i class="qb-icon qb-icon--profile"></i> Perfil</a>
+        <a aria-label="carrito" class="item-icon" href="#"><i class="qb-icon qb-icon--cart"></i>Carrito</a>
+      </div>
+    </header>
+
+    <main id="tienda">
+      <a aria-label="Volver arriba" href="#"></a>
+
+      <!-- #carousel -->
+      <!-- Section cards of books - Novedades-->
+      <section class="container container-tienda">
+        <a class="breadcrumbs" href="./index.html"><i class="qb-icon qb-icon--home-b"></i> > Tienda</a>
+        <h2>Tienda</h2>
+        <div class="filters-wrapper">
+          <div class="filter-container">
+            <label class="filter filter-dropdown" aria-label="filtrar-categorias" for="showFilter1">Filtrar por categorías</label>
+            <input class="dropdown-arrow" type="checkbox" id="showFilter1" name="showFilter1" />
+            <ul>
+              <li>Recién añadidos</li>
+              <li>Novelas</li>
+              <li>Ciencia ficción</li>
+              <li>Literatura Trans</li>
+              <li>Literatura Gay</li>
+              <li>Literatura Bisexual</li>
+              <li>Literatura Lesbiana</li>
+              <li>Teoría Queer</li>
+              <li>Estudios de género</li>
+            </ul>
+          </div>
+
+          <div class="filter-container">
+            <label class="filter filter-dropdown" aria-label="ordenar-por" for="showFilter2">Ordenar por...</label>
+            <input class="dropdown-arrow" type="checkbox" id="showFilter2" name="showFilter2" />
+            <ul>
+              <li>Más caros primero</li>
+              <li>Más baratos primero</li>
+              <li>Mejor valorados</li>
+              <li>Los más nuevos primero</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2>Recién añadidos</h2>
+        <div class="cards-books-wrapper">
+          <article class="card-books">
+            <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
+            <h3>The transgender Issue</h3>
+            <p>Shon Faye</p>
+            <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
+            <h3>Alguien tendrá que serlo</h3>
+            <p>Gustavo Pecoraro</p>
+            <h4 class="precio">16,95 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
+            <h3>¿Quién teme al género?</h3>
+            <p>Judith Butler</p>
+            <h4 class="precio">24,00 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
+            <h3>No todas las chicas</h3>
+            <p>Jennifer Dugan</p>
+            <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+        </div>
+
+        <div class="cards-books-wrapper">
+            <article class="card-books">
+              <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
+              <h3>The transgender Issue</h3>
+              <p>Shon Faye</p>
+              <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+  
+            <article class="card-books">
+              <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
+              <h3>Alguien tendrá que serlo</h3>
+              <p>Gustavo Pecoraro</p>
+              <h4 class="precio">16,95 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+  
+            <article class="card-books">
+              <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
+              <h3>¿Quién teme al género?</h3>
+              <p>Judith Butler</p>
+              <h4 class="precio">24,00 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+  
+            <article class="card-books">
+              <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
+              <h3>No todas las chicas</h3>
+              <p>Jennifer Dugan</p>
+            <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+          </div>
+
+          <div class="cards-books-wrapper">
+            <article class="card-books">
+              <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
+              <h3>The transgender Issue</h3>
+              <p>Shon Faye</p>
+              <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+  
+            <article class="card-books">
+              <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
+              <h3>Alguien tendrá que serlo</h3>
+              <p>Gustavo Pecoraro</p>
+              <h4 class="precio">16,95 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+  
+            <article class="card-books">
+              <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
+              <h3>¿Quién teme al género?</h3>
+              <p>Judith Butler</p>
+              <h4 class="precio">24,00 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+  
+            <article class="card-books">
+              <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
+              <h3>No todas las chicas</h3>
+              <p>Jennifer Dugan</p>
+            <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+          </div>
+
+          <div class="cards-books-wrapper">
+            <article class="card-books">
+              <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
+              <h3>The transgender Issue</h3>
+              <p>Shon Faye</p>
+              <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+  
+            <article class="card-books">
+              <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
+              <h3>Alguien tendrá que serlo</h3>
+              <p>Gustavo Pecoraro</p>
+              <h4 class="precio">16,95 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+  
+            <article class="card-books">
+              <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
+              <h3>¿Quién teme al género?</h3>
+              <p>Judith Butler</p>
+              <h4 class="precio">24,00 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+  
+            <article class="card-books">
+              <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
+              <h3>No todas las chicas</h3>
+              <p>Jennifer Dugan</p>
+            <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
+              <button class="btn btn--primary">Comprar</button>
+            </article>
+          </div>
+
+        
+
+      </section>
+      <!-- End of Section cards of books - Los más vendidos-->
+    </main>
+    <footer>
+      <div class="footer-first-block">
+        <a aria-label="Enlace en el footer para volver al inicio" class="logo-footer" href="index.html"><img src="./images/logos/logo-white.svg" alt="Logo Queer as Book en footer" width="130" /></a>
+        <ul class="footer-links">
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="quienes-somos#contacta.html">Contáctanos</a></li>
+        </ul>
+      </div>
+      <div class="footer-second-block">
+        <form action="#" method="post" accept-charset="utf-8" id="newsletter-subscribe">
+          <h4>Suscríbete a la Newsletter</h4>
+          <p>
+            <label for="subscribe-field"
+              >Entérate de todas las noticias de <br />
+              nuestra comunidad.</label
+            ><br />
+            <input type="text" name="email" placeholder="Escribe aquí tu email" value="" id="subscribe-field" />
+          </p>
+          <p>
+            <input class="btn btn--tertiary" type="submit" value="Enviar" />
+          </p>
+        </form>
+      </div>
+      <div class="footer-third-block">
+        <h4>Síguenos en nuestras redes</h4>
+        <ul class="footer-links footer-social">
+          <li>
+            <a href="#" aria-label="boton para ir a facebook"><i class="qb-icon qb-icon--facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="boton para ir a twitter"><i class="qb-icon qb-icon--twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="boton para ir a instagram"><i class="qb-icon qb-icon--instagram"></i></a>
+          </li>
+          <li>
+            <a href="#" aria-label="boton para ir a whatsapp"><i class="qb-icon qb-icon--whatsapp"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <a class="qb-button-top qb-icon--arrow-top" aria-label="Volver arriba" href="#"></a>
+
+    <nav class="bottom-navbar-wrapper">
+      <ul>
+        <li>
+          <a class="" href="index.html"><i class="qb-icon qb-icon--home"></i>Inicio</a>
+        </li>
+        <li>
+          <a href="#"><i class="qb-icon qb-icon--search-w"></i>Buscar</a>
+        </li>
+        <li>
+          <a href="#"><i class="qb-icon qb-icon--profile"></i>Perfil</a>
+        </li>
+        <li>
+          <a href="#"><i class="qb-icon qb-icon--cart"></i>Carrito</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="animations.js"></script>
+  </body>
+</html>

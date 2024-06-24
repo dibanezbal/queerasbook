@@ -7,17 +7,18 @@
     font-weight: 600;
 }
 
-#showFilter + ul {
+#showFilter + ul, #showFilter1 + ul, #showFilter2 + ul {
     display: none;
 }
 
-#showFilter {
+#showFilter, #showFilter1, #showFilter2 {
     position: absolute;
     opacity: 0;
     z-index: -1;
 }
 
-#showFilter:checked + ul {
+#showFilter:checked + ul, #showFilter1:checked + ul,
+#showFilter2:checked + ul {
     display: block;
     position: absolute;
     z-index: 20;
@@ -48,6 +49,14 @@
     width: 25px;
     height: 25px;
     transition: transform 0.3s ease-in-out;
+}
+
+.filter-dropdown.checked:after {
+    content: "";
+    background: url("../images/icons/icon-arrow-down.svg") no-repeat center;
+    width: 25px;
+    height: 25px;
+    transform: rotate(180deg);
 }
 
 .filter-container ul {
