@@ -236,9 +236,6 @@ span.max-deal {
 @media (min-width: 768px) {
   /* CARDS BOOKS - NOVEDADES Y LOS MÁS VENDIDOS */
 
-  article.card-books {
-    width: 210px;
-  }
 
   /* CARDS DEALS - OFERTAS Y PROMOCIONES */
   .cards-deals-wrapper article h3 {
