@@ -41,7 +41,6 @@
 }
 
 .calendar td.active {
-  content: "";
   background-color: var(--qb-c-pink-primary);
   width: 25px;
   height: 25px;
@@ -50,6 +49,13 @@
   background-position: center;
   padding: 3px;
 }
+
+.calendar th, .calendar td {
+    text-align: center;
+    width: 25px;
+    height: 45px;
+}
+
 
 #showCalendar:checked ~ .calendar-wrapper {
   display: block;
