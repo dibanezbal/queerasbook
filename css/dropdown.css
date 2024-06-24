@@ -20,7 +20,7 @@
 #showFilter:checked + ul {
     display: block;
     position: absolute;
-    z-index: 100;
+    z-index: 20;
 }
 
 .filter {
@@ -78,10 +78,17 @@
     .filter-container {
         width: 70vw;
     }
+
+    .filter-container ul {
+        width: 70vw;
+    }
 }
 
 
 @media (min-width: 768px){
+    .filter-container ul {
+        width: 320px;
+    }
     .filter-container {
         margin-top: 30px;
         margin-right: 10px;

@@ -14,7 +14,7 @@ header {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 25%);
   color: var(--qb-c-white);
   width: 100vw;
-  z-index: 99;
+  z-index: 100;
   padding: 10px 0;
 }
 
