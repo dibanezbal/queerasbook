@@ -41,13 +41,13 @@ main#tienda section.container-tienda {
   padding-top: 100px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 340px) {
   .qb-margin-top-mobile {
     margin-top: 1.7em;
   }
 }
 
-@media (min-width: 376px) and (max-width: 575px){
+@media (min-width: 341px) and (max-width: 575px){
   .qb-margin-top-mobile {
     margin-top: 0;
   }
