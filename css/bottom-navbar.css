@@ -10,6 +10,7 @@ nav.bottom-navbar-wrapper {
 nav.bottom-navbar-wrapper ul {
   display: flex;
   justify-content: space-around;
+  font-size: small;
 }
 
 nav.bottom-navbar-wrapper ul li {

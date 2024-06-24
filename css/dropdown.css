@@ -20,6 +20,11 @@
 #showFilter:checked + ul {
     display: block;
     position: absolute;
+    z-index: 100;
+}
+
+.filter {
+    cursor: pointer;
 }
 
 .filter-container {
@@ -60,12 +65,36 @@
     padding: 15px 15px 15px 30px;
     border: 1px solid var(--qb-c-pink-primary);
     font-weight: 400;
+    border-collapse: collapse;
 }
 
-@media (min-width: 575px){
+@media (min-width: 375px) and (max-width: 575px){
+    .filter-container, .filter.filter-calendar {
+        width: 85vw;
+    }
 }
+
+@media (min-width: 575px) and (max-width: 768px){
+    .filter-container {
+        width: 70vw;
+    }
+}
+
 
 @media (min-width: 768px){
+    .filter-container {
+        margin-top: 30px;
+        margin-right: 10px;
+      }
+
+    .filters-wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .filter-container, .calendar-container {
+        width: 320px;
+    }
 }
 
 
