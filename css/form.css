@@ -1,14 +1,6 @@
-/** @format */
-
 #contact-form h2,
-#contact-form p,
-#map h2,
-#map p {
+#contact-form p {
   text-align: center;
-}
-
-#map p {
-  margin: 25px auto;
 }
 
 #contact-form p {
@@ -22,7 +14,7 @@
 }
 
 span.mandatory-field {
-  color: var(--qb-c-error);
+  color: var(--qb-c-pink-darker);
 }
 
 #contact-form input:not([type="submit"]),

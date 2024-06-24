@@ -1,3 +1,12 @@
+#map h2,
+#map p {
+  text-align: center;
+}
+
+#map p {
+  margin: 25px auto;
+}
+
 @media (min-width: 768px) {
   .form-map {
     display: flex;
