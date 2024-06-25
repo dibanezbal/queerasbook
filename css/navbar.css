@@ -1,9 +1,5 @@
-/**
- * Hide navbar in desktop
- *
- * @format
- */
-
+/* Hide navbar in desktop */
+ 
 #navbar-search-desktop,
 .logo-desktop,
 #navbar-menu-desktop {
