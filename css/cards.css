@@ -15,6 +15,8 @@ article.card-books {
   position: relative;
 }
 
+
+
 article.card-books:before {
   content: "";
   background-color: var(--qb-c-gray-primary);
@@ -72,6 +74,15 @@ article.card-books h4.rating:before {
   margin-right: 10px;
   background-repeat: no-repeat;
 }
+
+.card-books-content-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 90px;
+  margin-top: 5px;
+}
+
 
 /* CARDS DEALS - OFERTAS Y PROMOCIONES */
 
@@ -219,6 +230,12 @@ span.max-deal {
     font-size: x-large;
     font-weight: 800;
   }
+
+  .card-books-content-wrapper{
+    height: 90px;
+    margin-top: 20px;
+  }
+  
 
   /* CARDS DEALS - OFERTAS Y PROMOCIONES */
 
