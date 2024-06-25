@@ -1,8 +1,4 @@
-/**
- * Global setup for layout
- *
- * @format
- */
+/* Global setup for layout */
 
 * {
   box-sizing: border-box;
@@ -29,19 +25,23 @@
   --qb-c-error: #de4533;
 }
 
-/* Fuentes */
+/* Fonts */
 
 @font-face {
   font-family: "Lato";
   src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 }
 
-/* Setup sin carousel hero */
+/* Setup - without carousel */
 
 main#tienda section.container-no-slider,
 main#quienes-somos section.container-no-slider {
   margin-top: 0;
   padding-top: 100px;
+}
+
+main#quienes-somos section.container-no-slider {
+  margin-bottom: 0 !important;
 }
 
 main#quienes-somos h2 {

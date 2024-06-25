@@ -1,119 +1,120 @@
 .filters-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-weight: 600;
 }
 
-#showFilter + ul, #showFilter1 + ul, #showFilter2 + ul {
-    display: none;
+#showFilter + ul,
+#showFilter1 + ul,
+#showFilter2 + ul {
+  display: none;
 }
 
-#showFilter, #showFilter1, #showFilter2 {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
+#showFilter,
+#showFilter1,
+#showFilter2 {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
-#showFilter:checked + ul, #showFilter1:checked + ul,
+#showFilter:checked + ul,
+#showFilter1:checked + ul,
 #showFilter2:checked + ul {
-    display: block;
-    position: absolute;
-    z-index: 20;
+  display: block;
+  position: absolute;
+  z-index: 20;
 }
 
 .filter {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .filter-container {
-    width: 85vw;
-    border: 2px solid var(--qb-c-pink-primary);
-    padding: 15px;
-    margin: 10px 0;
-    cursor: pointer;
-    display: flex;
-    position: relative;
+  width: 85vw;
+  border: 2px solid var(--qb-c-pink-primary);
+  padding: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: flex;
+  position: relative;
 }
 
 .filter-dropdown:after {
-    content: "";
-    background: url("../images/icons/icon-arrow-down.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    width: 25px;
-    height: 25px;
-    transition: transform 0.3s ease-in-out;
+  content: "";
+  background: url("../images/icons/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .filter-dropdown.checked:after {
-    content: "";
-    background: url("../images/icons/icon-arrow-down.svg") no-repeat center;
-    width: 25px;
-    height: 25px;
-    transform: rotate(180deg);
+  content: "";
+  background: url("../images/icons/icon-arrow-down.svg") no-repeat center;
+  width: 25px;
+  height: 25px;
+  transform: rotate(180deg);
 }
 
 .filter-container ul {
-    position: absolute;
-    top: 49px;
-    left: -2px;
-    background-color: var(--qb-c-white);
-    width: 85vw;
-    border: 1px solid var(--qb-c-pink-primary);
-    box-shadow: 1px 6px 10px rgba(0,0,0,0.3)
+  position: absolute;
+  top: 49px;
+  left: -2px;
+  background-color: var(--qb-c-white);
+  width: 85vw;
+  border: 1px solid var(--qb-c-pink-primary);
+  box-shadow: 1px 6px 10px rgba(0, 0, 0, 0.3);
 }
 
 .filter-container ul li {
-    list-style: none;
-    padding: 15px 15px 15px 30px;
-    border: 1px solid var(--qb-c-pink-primary);
-    font-weight: 400;
-    border-collapse: collapse;
+  list-style: none;
+  padding: 15px 15px 15px 30px;
+  border: 1px solid var(--qb-c-pink-primary);
+  font-weight: 400;
+  border-collapse: collapse;
 }
 
-@media (min-width: 375px) and (max-width: 575px){
-    .filter-container, .filter.filter-calendar {
-        width: 85vw;
-    }
+@media (min-width: 375px) and (max-width: 575px) {
+  .filter-container,
+  .filter.filter-calendar {
+    width: 85vw;
+  }
 }
 
-@media (min-width: 575px) and (max-width: 768px){
-    .filter-container {
-        width: 70vw;
-    }
+@media (min-width: 575px) and (max-width: 768px) {
+  .filter-container {
+    width: 70vw;
+  }
 
-    .filter-container ul {
-        width: 320px;
-    }
+  .filter-container ul {
+    width: 320px;
+  }
 }
 
+@media (min-width: 768px) {
+  .filter-container ul {
+    width: 320px;
+  }
+  .filter-container {
+    margin-top: 30px;
+    margin-right: 10px;
+  }
 
-@media (min-width: 768px){
-    .filter-container ul {
-        width: 320px;
-    }
-    .filter-container {
-        margin-top: 30px;
-        margin-right: 10px;
-      }
+  .filters-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .filters-wrapper {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .filter-container, .calendar-container {
-        width: 320px;
-    }
+  .filter-container,
+  .calendar-container {
+    width: 320px;
+  }
 }
-
-
-
-
-

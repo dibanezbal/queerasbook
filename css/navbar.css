@@ -1,12 +1,12 @@
-/* Oculto en mobile */
+/* Hide navbar in desktop */
 
-#navbar-search-desktop, 
+#navbar-search-desktop,
 .logo-desktop,
 #navbar-menu-desktop {
   display: none;
 }
 
-/* Comienza navbar */
+/* Navbar */
 
 header {
   position: fixed;
@@ -21,7 +21,7 @@ header {
 .header-wrapper {
   display: flex;
   align-items: center;
-	justify-content: space-around;
+  justify-content: space-around;
   margin: 0 auto;
 }
 
@@ -38,7 +38,7 @@ header a {
 #navbar-mobile-menu {
   position: absolute;
   top: 0;
-	left: 0;
+  left: 0;
   background: var(--qb-c-white);
   width: 100vw;
 }
@@ -57,24 +57,24 @@ header a {
 }
 
 #navbar-mobile-menu li:last-child {
-} 
+}
 
 #nav-right-icons {
-	width: 80px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#nav-right-icons a{
-	flex: 1;
+#nav-right-icons a {
+  flex: 1;
 }
 
-/* Items con iconos */
+/* Items with icons */
 a.item-icon {
   display: flex;
   flex-direction: column;
-	font-size: x-small;
+  font-size: x-small;
   justify-content: center;
   align-items: center;
 }
@@ -90,7 +90,6 @@ a.item-icon {
   color: #333;
 }
 
-
 .main-menu {
   position: absolute;
   display: none;
@@ -98,8 +97,7 @@ a.item-icon {
   top: 0;
   height: 100%;
   overflow-x: visible;
-  transition: left 0.3s ease,
-    	box-shadow 0.3s ease;
+  transition: left 0.3s ease, box-shadow 0.3s ease;
   z-index: 999;
 }
 
@@ -107,9 +105,9 @@ a.item-icon {
   list-style: none;
   margin: 0;
   padding: 2.5em 0 0;
-  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-     -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-          box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
+  box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
   min-height: 100%;
   width: 200px;
   background: #1a1a1a;
@@ -136,9 +134,9 @@ a.item-icon {
   display: block;
   left: 0;
   outline: none;
-  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
-  box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
 }
 
 .main-menu:target .menu-close,
@@ -153,36 +151,36 @@ a.item-icon {
 }
 
 .main-menu:target + .backdrop,
-.main-menu[aria-expanded="true"] + .backdrop{
+.main-menu[aria-expanded="true"] + .backdrop {
   position: absolute;
-  display: block;  
+  display: block;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   z-index: 998;
   background: #000;
-  background: rgba(0,0,0,.85);
+  background: rgba(0, 0, 0, 0.85);
   cursor: default;
 }
 
 @supports (position: fixed) {
   .main-menu,
   .main-menu:target + .backdrop,
-  .main-menu[aria-expanded="true"] + .backdrop{
+  .main-menu[aria-expanded="true"] + .backdrop {
     position: fixed;
   }
 }
-
 
 @media screen and (min-width: 575px) {
   .logo-desktop {
     display: inline;
   }
 
-	ul#navbar-mobile-menu li:first-child,
+  ul#navbar-mobile-menu li:first-child,
   .menu-toggle,
-  .hamburger-menu,  .logo-mobile  {
+  .hamburger-menu,
+  .logo-mobile {
     display: none;
   }
 
@@ -213,7 +211,7 @@ a.item-icon {
   }
 
   .hover-underline-animation:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -231,7 +229,6 @@ a.item-icon {
   }
 }
 
-
 @media (min-width: 768px) {
   .header-wrapper {
     width: 73vw;
@@ -244,32 +241,32 @@ a.item-icon {
   header .qb-icon--search-w {
     display: none;
   }
-  
+
   .main-menu {
     position: relative;
-		left: auto;
-		top: auto;
-		height: auto;
+    left: auto;
+    top: auto;
+    height: auto;
     display: block;
   }
-  
+
   .main-menu ul {
     display: flex;
     justify-content: space-between;
     padding: 0;
     -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
     height: auto;
     width: auto;
     background: none;
   }
-  
+
   .main-menu a {
     color: white;
     border: 0 !important;
   }
-  
+
   .main-menu a:hover,
   .main-menu a:focus {
     background: none;

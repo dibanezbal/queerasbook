@@ -1,6 +1,4 @@
-/**
- * CARDS BOOKS
- */
+/* CARDS BOOKS */
 
 div.cards-books-wrapper {
   display: grid;
@@ -234,9 +232,6 @@ span.max-deal {
 }
 
 @media (min-width: 768px) {
-  /* CARDS BOOKS - NOVEDADES Y LOS MÁS VENDIDOS */
-
-
   /* CARDS DEALS - OFERTAS Y PROMOCIONES */
   .cards-deals-wrapper article h3 {
     font-size: large;

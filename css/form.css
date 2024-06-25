@@ -31,7 +31,7 @@ span.mandatory-field {
   height: 197px;
 }
 
-.form-map {
+.container .form-map {
   display: flex;
   flex-direction: column;
 }

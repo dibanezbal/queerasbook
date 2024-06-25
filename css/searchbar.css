@@ -1,61 +1,62 @@
 div.searchbar form {
-    display: flex;
-    flex-direction: row-reverse;    width: 350px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 350px;
 }
 
-div.searchbar input[type="text"]{
-    width: 100%;
-    background-color: var(--qb-c-pink-primary);
-    border-style: none;
-    padding: 10px 15px;
-    border-radius: 50px;
-    border: 1px solid var(--qb-c-pink-secondary);
-    border-left: 0 ;
+div.searchbar input[type="text"] {
+  width: 100%;
+  background-color: var(--qb-c-pink-primary);
+  border-style: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  border: 1px solid var(--qb-c-pink-secondary);
+  border-left: 0;
 }
 
-div.searchbar input[type="text"]::placeholder:after{
-    content: "";
-    background-image: url("../images/icons/icon-search.svg");
-    display: block;
-    width: 50px;
-    height: 50px;
+div.searchbar input[type="text"]::placeholder:after {
+  content: "";
+  background-image: url("../images/icons/icon-search.svg");
+  display: block;
+  width: 50px;
+  height: 50px;
 }
 
-div.searchbar input[type="text"]:focus, 
+div.searchbar input[type="text"]:focus,
 div.searchbar input[type="text"]:active {
-    border: none;
+  border: none;
 }
 
-div.searchbar input[type="submit"]{
-    width: 50px;
-    background-image: url("../images/icons/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50px 0 0 50px;
-    background-color: var(--qb-c-pink-primary);
-    border: 1px solid var(--qb-c-pink-secondary);
-    border-right: 0 ;
-    display: none;
+div.searchbar input[type="submit"] {
+  width: 50px;
+  background-image: url("../images/icons/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px 0 0 50px;
+  background-color: var(--qb-c-pink-primary);
+  border: 1px solid var(--qb-c-pink-secondary);
+  border-right: 0;
+  display: none;
 }
 
 ::placeholder {
-    color: var(--qb-c-black);
-    font-weight: 900;
+  color: var(--qb-c-black);
+  font-weight: 900;
 }
 
-div.searchbar form:before{
-    content: "";
-    background-image: url("../images/icons/icon-search.svg");
-    width: 50px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+div.searchbar form:before {
+  content: "";
+  background-image: url("../images/icons/icon-search.svg");
+  width: 50px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-@media (max-width: 575px){
-    .searchbar {
-        display: none;
-    }
+@media (max-width: 575px) {
+  .searchbar {
+    display: none;
+  }
 }
