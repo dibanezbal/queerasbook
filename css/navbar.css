@@ -1,4 +1,8 @@
-/* Hide navbar in desktop */
+/**
+ * Hide navbar in desktop
+ *
+ * @format
+ */
 
 #navbar-search-desktop,
 .logo-desktop,
@@ -68,6 +72,11 @@ header a {
 
 #nav-right-icons a {
   flex: 1;
+}
+
+#navbar-mobile-menu .page-active {
+  font-weight: 900;
+  color: var(--qb-c-pink-darker);
 }
 
 /* Items with icons */
@@ -172,7 +181,7 @@ a.item-icon {
   }
 }
 
-@media screen and (min-width: 575px) {
+@media (min-width: 575px) {
   .logo-desktop {
     display: inline;
   }
@@ -272,4 +281,21 @@ a.item-icon {
     background: none;
     color: #c00;
   }
+
+  .page-active:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--qb-c-pink-primary);
+  }
+
+  #navbar-mobile-menu .page-active {
+    font-weight: 600;
+    color: var(--qb-c-white);
+  }
+  
 }
