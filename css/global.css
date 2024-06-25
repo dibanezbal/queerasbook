@@ -78,6 +78,21 @@ article {
   visibility: hidden;
 }
 
+/* Perfil and Carrito alignment */
+.perfil-carrito-wrapper {
+  display: flex;
+  flex-direction: row;   
+  justify-content: space-between;
+  width: 25vw;
+}
+
+@media (min-width: 575px){
+  .perfil-carrito-wrapper {
+    width: 80px;
+  }
+  
+}
+
 /* Breadcrumbs */
 
 a.breadcrumbs {

@@ -181,9 +181,22 @@ a.item-icon {
   }
 }
 
+
+/* Perfil and Carrito alignment */
+.perfil-carrito-wrapper {
+  display: flex;
+  flex-direction: row;   
+  justify-content: space-between;
+  width: 25vw;
+}
+
 @media (min-width: 575px) {
   .logo-desktop {
     display: inline;
+  }
+
+  .perfil-carrito-wrapper {
+    width: 80px;
   }
 
   ul#navbar-mobile-menu li:first-child,
