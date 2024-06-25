@@ -41,7 +41,6 @@ div.searchbar input[type="submit"] {
 
 ::placeholder {
   color: var(--qb-c-black);
-  font-weight: 900;
 }
 
 div.searchbar form:before {
