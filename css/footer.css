@@ -36,7 +36,7 @@ footer .footer-social {
 }
 
 footer input[type="text"] {
-  border: 1px solid var(--qb-c-pink-primary);
+  border: 2px solid var(--qb-c-pink-secondary);
   color: var(--qb-c-pink-primary);
   text-align: center;
   margin: 15px 0;
@@ -67,8 +67,6 @@ footer .footer-social {
   }
 
   footer input[type="text"] {
-    border: 1px solid var(--qb-c-pink-primary);
-    color: var(--qb-c-pink-primary);
     text-align: left;
     margin: 15px 0;
     padding: 5px 10px;
