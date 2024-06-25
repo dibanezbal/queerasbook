@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,15 +35,14 @@
 
         <div class="searchbar">
           <form action="#" method="post" accept-charset="utf-8" id="searchbar">
-            <label aria-label="Barra de búsqueda" title="buscar" for="searchbar-field"></label><br />
+            <label hidden aria-label="Barra de búsqueda" title="buscar" for="searchbar-field">Buscador</label><br>
             <input class="searchbar-text" type="text" name="email" placeholder="Buscar un producto o evento" value="" id="searchbar-field" />
             <input aria-label="Botón oculto para buscar" aria-hidden="true" type="submit" value="" />
           </form>
         </div>
 
         <a class="logo-mobile" href="index.html"><img src="./images/logos/logo-white-pink-sm.svg" alt="Logo Queer as Book" width="40" /></a>
-        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-        <a aria-label="perfil" class="item-icon" href="#"><span class="qb-icon qb-icon--profile"></span> Perfil</a>
+        <a href="#main-menu-toggle" title="menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>        <a aria-label="perfil" class="item-icon" href="#"><span class="qb-icon qb-icon--profile"></span> Perfil</a>
         <a aria-label="carrito" class="item-icon" href="#"><span class="qb-icon qb-icon--cart"></span>Carrito</a>
       </div>
     </header>
@@ -120,109 +121,106 @@
         </div>
 
         <div class="cards-books-wrapper">
-            <article class="card-books">
-              <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
-              <h3>The transgender Issue</h3>
-              <p>Shon Faye</p>
-              <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
-              <h3>Alguien tendrá que serlo</h3>
-              <p>Gustavo Pecoraro</p>
-              <h4 class="precio">16,95 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
-              <h3>¿Quién teme al género?</h3>
-              <p>Judith Butler</p>
-              <h4 class="precio">24,00 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
-              <h3>No todas las chicas</h3>
-              <p>Jennifer Dugan</p>
+          <article class="card-books">
+            <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
+            <h3>The transgender Issue</h3>
+            <p>Shon Faye</p>
+            <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
+            <h3>Alguien tendrá que serlo</h3>
+            <p>Gustavo Pecoraro</p>
+            <h4 class="precio">16,95 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
+            <h3>¿Quién teme al género?</h3>
+            <p>Judith Butler</p>
+            <h4 class="precio">24,00 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
+            <h3>No todas las chicas</h3>
+            <p>Jennifer Dugan</p>
             <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-          </div>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+        </div>
 
-          <div class="cards-books-wrapper">
-            <article class="card-books">
-              <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
-              <h3>The transgender Issue</h3>
-              <p>Shon Faye</p>
-              <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
-              <h3>Alguien tendrá que serlo</h3>
-              <p>Gustavo Pecoraro</p>
-              <h4 class="precio">16,95 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
-              <h3>¿Quién teme al género?</h3>
-              <p>Judith Butler</p>
-              <h4 class="precio">24,00 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
-              <h3>No todas las chicas</h3>
-              <p>Jennifer Dugan</p>
+        <div class="cards-books-wrapper">
+          <article class="card-books">
+            <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
+            <h3>The transgender Issue</h3>
+            <p>Shon Faye</p>
+            <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
+            <h3>Alguien tendrá que serlo</h3>
+            <p>Gustavo Pecoraro</p>
+            <h4 class="precio">16,95 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
+            <h3>¿Quién teme al género?</h3>
+            <p>Judith Butler</p>
+            <h4 class="precio">24,00 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
+            <h3>No todas las chicas</h3>
+            <p>Jennifer Dugan</p>
             <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-          </div>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+        </div>
 
-          <div class="cards-books-wrapper">
-            <article class="card-books">
-              <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
-              <h3>The transgender Issue</h3>
-              <p>Shon Faye</p>
-              <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
-              <h3>Alguien tendrá que serlo</h3>
-              <p>Gustavo Pecoraro</p>
-              <h4 class="precio">16,95 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
-              <h3>¿Quién teme al género?</h3>
-              <p>Judith Butler</p>
-              <h4 class="precio">24,00 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-  
-            <article class="card-books">
-              <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
-              <h3>No todas las chicas</h3>
-              <p>Jennifer Dugan</p>
+        <div class="cards-books-wrapper">
+          <article class="card-books">
+            <img src="./images/book-covers/the-transgender-issue.png" alt="portada The transgender issue" />
+            <h3>The transgender Issue</h3>
+            <p>Shon Faye</p>
+            <h4 class="precio qb-margin-top-mobile">12,34 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/alguien-tendra-que-serlo.png" alt="portada libro Alguien tendrá que serlo" />
+            <h3>Alguien tendrá que serlo</h3>
+            <p>Gustavo Pecoraro</p>
+            <h4 class="precio">16,95 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/quien-teme-al-genero.png" alt="portada libro Quién teme al género" />
+            <h3>¿Quién teme al género?</h3>
+            <p>Judith Butler</p>
+            <h4 class="precio">24,00 €</h4>
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+
+          <article class="card-books">
+            <img src="./images/book-covers/no-todas-las-chicas.png" alt="portada libro No todas las chicas" />
+            <h3>No todas las chicas</h3>
+            <p>Jennifer Dugan</p>
             <h4 class="precio qb-margin-top-mobile">18,90 €</h4>
-              <button class="btn btn--primary">Comprar</button>
-            </article>
-          </div>
-
-        
-
+            <button class="btn btn--primary">Comprar</button>
+          </article>
+        </div>
       </section>
       <!-- End of Section cards of books - Los más vendidos-->
     </main>
