@@ -4,7 +4,7 @@ div.searchbar form {
   width: 350px;
 }
 
-div.searchbar input[type="text"] {
+div.searchbar input[type="search"] {
   width: 100%;
   background-color: var(--qb-c-pink-primary);
   border-style: none;
@@ -14,7 +14,7 @@ div.searchbar input[type="text"] {
   border-left: 0;
 }
 
-div.searchbar input[type="text"]::placeholder:after {
+div.searchbar input[type="search"]::placeholder:after {
   content: "";
   background-image: url("../images/icons/icon-search.svg");
   display: block;
@@ -22,8 +22,8 @@ div.searchbar input[type="text"]::placeholder:after {
   height: 50px;
 }
 
-div.searchbar input[type="text"]:focus,
-div.searchbar input[type="text"]:active {
+div.searchbar input[type="search"]:focus,
+div.searchbar input[type="search"]:active {
   border: none;
 }
 
